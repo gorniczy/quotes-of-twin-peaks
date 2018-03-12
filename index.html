@@ -4,7 +4,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
-        $.getJSON("json.json", function(json) {
+        $.getJSON("https://api.myjson.com/bins/18y3j1", function(json) {
           $("#here").html(JSON.stringify(json));
         });
       });
