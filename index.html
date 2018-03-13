@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-      $(document).ready(function() {
-        $.getJSON("https://api.myjson.com/bins/18y3j1", function(json) {
-          $("#here").html(JSON.stringify(json));
-        });
-      });
+      var list = {
+        0: "Audrey",
+        1: "Cooper",
+        2: "Leeland",
+        3: "Bob",
+        4: "Harry",
+        5: "Andy",
+        6: "Leo",
+        7: "Norma",
+        8: "James",
+        9: "Waldo"
+      };
+function randomize() {
+      var result = list[Math.floor(Math.random() * 10)];
+       document.getElementById("here").innerHTML = result;
+  };
     </script>
   </head>
   <body>
-    <h1 id="here">
-    </h1>
+    <div>
+      <h1 id="here">
+      </h1>
+    </div>
+      <button onclick="randomize()">Quote Me!
+      </button>
+    </div>
+
   </body>
 </html>
