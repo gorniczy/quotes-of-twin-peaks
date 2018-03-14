@@ -14,10 +14,26 @@
         8: "James",
         9: "Waldo"
       };
+
+      var quote = {
+      Audrey: "I'm Audrey Horne and I get what I want",
+      Cooper: "Damn fine cup of coffee",
+      Leeland: "Let's dance",
+      Bob: "",
+      Harry: "",
+      Andy: "",
+      Leo: "",
+      Norma: "",
+      James: "",
+      Waldo: ""
+      };
+
+
 function randomize() {
       var result = list[Math.floor(Math.random() * 10)];
-       document.getElementById("here").innerHTML = result;
+       document.getElementById("here").innerHTML = result + " " + quote[result];
   };
+
     </script>
   </head>
   <body>
@@ -28,6 +44,5 @@ function randomize() {
       <button onclick="randomize()">Quote Me!
       </button>
     </div>
-
   </body>
 </html>
