@@ -15,23 +15,58 @@
         9: "Waldo"
       };
 
-      var quote = {
-      Audrey: "I'm Audrey Horne and I get what I want",
-      Cooper: "Damn fine cup of coffee",
-      Leeland: "Let's dance",
-      Bob: "",
-      Harry: "",
-      Andy: "",
-      Leo: "",
-      Norma: "",
-      James: "",
-      Waldo: ""
+      var quoteImage = {
+      Audrey: {
+        image: "...",
+        quote: ["I'm Audrey Horne and I get what I want",
+                "Don't make me leave!"]
+        },
+      Cooper: {
+        image: "...",
+        quote: ["Damn fine cup of coffee",
+                "Diane..."]
+        },
+      Leeland: {
+        image: "...",
+        quote: "Let's dance"
+        },
+      Bob: {
+        image: "...",
+        quote: ""
+        },
+      Harry: {
+        image: "...",
+        quote: ""
+        },
+      Andy: {
+        image: "...",
+        quote: ""
+        },
+      Leo: {
+        image: "...",
+        quote: "Where's my shirt?"
+        },
+      Norma: {
+        image: "...",
+        quote: ""
+        },
+      James: {
+        image: "...",
+        quote: ""
+        },
+      Waldo: {
+        image: "...",
+        quote: ""
+        }
       };
 
+var image = {
+
+}
 
 function randomize() {
       var result = list[Math.floor(Math.random() * 10)];
-       document.getElementById("here").innerHTML = result + " " + quote[result];
+       document.getElementById("here").innerHTML = result + " " + quoteImage[result].quote[Math.floor(Math.random() * 2)];
   };
 
     </script>
