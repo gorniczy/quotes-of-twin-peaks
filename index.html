@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="css/twin_css.css" type="text/css" rel="stylesheet">
     <script>
       var list = {
         0: "Audrey",
@@ -28,35 +29,43 @@
         },
       Leeland: {
         image: "...",
-        quote: "Let's dance"
+        quote: ["Let's dance",
+                "My Laura, my baby"]
         },
       Bob: {
         image: "...",
-        quote: ""
+        quote: ["I will kill again",
+                "Cooper"]
         },
       Harry: {
         image: "...",
-        quote: ""
+        quote: ["Get him out of here",
+                "Where's Josie?"]
         },
       Andy: {
         image: "...",
-        quote: ""
+        quote: ["I'm a whole damn sea",
+                "Let's be friends"]
         },
       Leo: {
         image: "...",
-        quote: "Where's my shirt?"
+        quote: ["Where's my shirt?",
+                "There's something wrong with little Nicky"]
         },
       Norma: {
         image: "...",
-        quote: ""
+        quote: ["I'd rather be his whore than your wife",
+                "Welcom to RR"]
         },
       James: {
         image: "...",
-        quote: ""
+        quote: ["That's wrong",
+                "I can't"]
         },
       Waldo: {
         image: "...",
-        quote: ""
+        quote: ["Laura, Laura",
+                "Leo, Leo"]
         }
       };
 
@@ -66,17 +75,32 @@ var image = {
 
 function randomize() {
       var result = list[Math.floor(Math.random() * 10)];
-       document.getElementById("here").innerHTML = result + " " + quoteImage[result].quote[Math.floor(Math.random() * 2)];
+       document.getElementById("image").innerHTML = result;
+       document.getElementById("quote").innerHTML = quoteImage[result].quote[Math.floor(Math.random() * 2)];
   };
+
+  function mix() {
+        var result = list[Math.floor(Math.random() * 10)];
+         document.getElementById("image").innerHTML = result;
+        var mixMe = list[Math.floor(Math.random() * 10)];
+         document.getElementById("quote").innerHTML = quoteImage[mixMe].quote[Math.floor(Math.random() * 2)];
+    };
 
     </script>
   </head>
   <body>
-    <div>
-      <h1 id="here">
+    <div id = "solo">
+      <h1 id="image">
       </h1>
+      <h3 id="quote">
+      </h3>
     </div>
+    <div id = "duo">
+    </div>
+    <div>
       <button onclick="randomize()">Quote Me!
+      </button>
+      <button onclick="mix()">Mix Me!
       </button>
     </div>
   </body>
