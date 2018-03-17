@@ -14,7 +14,7 @@
         7: "Norma",
         8: "James",
         9: "Waldo"
-      };
+      }
 
       var quoteImage = {
       Audrey: {
@@ -67,24 +67,37 @@
         quote: ["Laura, Laura",
                 "Leo, Leo"]
         }
-      };
-
-var image = {
-
-}
+      }
 
 function randomize() {
+      document.getElementById("duo").style.display = "none";
       var result = list[Math.floor(Math.random() * 10)];
        document.getElementById("image").innerHTML = result;
        document.getElementById("quote").innerHTML = quoteImage[result].quote[Math.floor(Math.random() * 2)];
-  };
+  }
 
   function mix() {
+        document.getElementById("duo").style.display = "none";
         var result = list[Math.floor(Math.random() * 10)];
          document.getElementById("image").innerHTML = result;
         var mixMe = list[Math.floor(Math.random() * 10)];
          document.getElementById("quote").innerHTML = quoteImage[mixMe].quote[Math.floor(Math.random() * 2)];
-    };
+    }
+
+    function combine() {
+        document.getElementById("duo").style.display = "block";
+        var resultOne = list[Math.floor(Math.random() * 10)];
+        var resultTwo = list[Math.floor(Math.random() * 10)];
+        if (resultOne != resultTwo) {
+          document.getElementById("image").innerHTML = resultOne;
+          document.getElementById("quote").innerHTML = quoteImage[resultOne].quote[Math.floor(Math.random() * 2)];
+          document.getElementById("duo_image").innerHTML = resultTwo;
+          document.getElementById("duo_quote").innerHTML = quoteImage[resultTwo].quote[Math.floor(Math.random() * 2)];
+        }
+        else {
+          combine();
+        }
+      }
 
     </script>
   </head>
@@ -96,11 +109,17 @@ function randomize() {
       </h3>
     </div>
     <div id = "duo">
+      <h1 id="duo_image">
+      </h1>
+      <h3 id="duo_quote">
+      </h3>
     </div>
     <div>
       <button onclick="randomize()">Quote Me!
       </button>
       <button onclick="mix()">Mix Me!
+      </button>
+      <button onclick="combine()">Combine Me!
       </button>
     </div>
   </body>
