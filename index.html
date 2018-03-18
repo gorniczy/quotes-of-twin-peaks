@@ -50,7 +50,7 @@
       Leo: {
         image: "...",
         quote: ["Where's my shirt?",
-                "There's something wrong with little Nicky"]
+                "You've been a bad girl"]
         },
       Norma: {
         image: "...",
@@ -99,28 +99,49 @@ function randomize() {
         }
       }
 
+      function combineMix() {
+          document.getElementById("duo").style.display = "block";
+          var resultOne = list[Math.floor(Math.random() * 10)];
+          var mixMeOne = list[Math.floor(Math.random() * 10)];
+          var resultTwo = list[Math.floor(Math.random() * 10)];
+          var mixMeTwo = list[Math.floor(Math.random() * 10)];
+          if (resultOne != resultTwo && mixMeOne != mixMeTwo) {
+            document.getElementById("image").innerHTML = resultOne;
+            document.getElementById("quote").innerHTML = quoteImage[mixMeOne].quote[Math.floor(Math.random() * 2)];
+            document.getElementById("duo_image").innerHTML = resultTwo;
+            document.getElementById("duo_quote").innerHTML = quoteImage[mixMeTwo].quote[Math.floor(Math.random() * 2)];
+          }
+          else {
+            combine();
+          }
+        }
+
     </script>
   </head>
   <body>
-    <div id = "solo">
-      <h1 id="image">
-      </h1>
-      <h3 id="quote">
-      </h3>
-    </div>
-    <div id = "duo">
-      <h1 id="duo_image">
-      </h1>
-      <h3 id="duo_quote">
-      </h3>
-    </div>
-    <div>
+    <div class="buttons">
       <button onclick="randomize()">Quote Me!
       </button>
       <button onclick="mix()">Mix Me!
       </button>
       <button onclick="combine()">Combine Me!
       </button>
+      </button>
+      <button onclick="combineMix()">Combine Mix Me!
+    </div>
+    <div class="grid">
+      <div id = "solo">
+        <h1 id="image">
+        </h1>
+        <h3 id="quote">
+        </h3>
+      </div>
+      <div id = "duo">
+        <h1 id="duo_image">
+        </h1>
+        <h3 id="duo_quote">
+        </h3>
+      </div>
     </div>
   </body>
 </html>
