@@ -35,7 +35,11 @@
       Bob: {
         image: "...",
         quote: ["I will kill again",
-                "Cooper"]
+                "Cooper",
+                "test",
+                "test2",
+                "test3",
+                "test4"]
         },
       Harry: {
         image: "...",
@@ -69,11 +73,11 @@
         }
       }
 
-function randomize() {
+  function randomize() {
       document.getElementById("duo").style.display = "none";
       var result = list[Math.floor(Math.random() * 10)];
        document.getElementById("image").innerHTML = result;
-       document.getElementById("quote").innerHTML = quoteImage[result].quote[Math.floor(Math.random() * 2)];
+       document.getElementById("quote").innerHTML = quoteImage[result].quote[Math.floor(Math.random() * quoteImage[result].quote.length)];
   }
 
   function mix() {
@@ -81,40 +85,40 @@ function randomize() {
         var result = list[Math.floor(Math.random() * 10)];
          document.getElementById("image").innerHTML = result;
         var mixMe = list[Math.floor(Math.random() * 10)];
-         document.getElementById("quote").innerHTML = quoteImage[mixMe].quote[Math.floor(Math.random() * 2)];
-    }
+         document.getElementById("quote").innerHTML = quoteImage[mixMe].quote[Math.floor(Math.random() * quoteImage[result].quote.length)];
+  }
 
-    function combine() {
+  function combine() {
         document.getElementById("duo").style.display = "block";
         var resultOne = list[Math.floor(Math.random() * 10)];
         var resultTwo = list[Math.floor(Math.random() * 10)];
         if (resultOne != resultTwo) {
           document.getElementById("image").innerHTML = resultOne;
-          document.getElementById("quote").innerHTML = quoteImage[resultOne].quote[Math.floor(Math.random() * 2)];
+          document.getElementById("quote").innerHTML = quoteImage[resultOne].quote[Math.floor(Math.random() * quoteImage[resultOne].quote.length)];
           document.getElementById("duo_image").innerHTML = resultTwo;
-          document.getElementById("duo_quote").innerHTML = quoteImage[resultTwo].quote[Math.floor(Math.random() * 2)];
+          document.getElementById("duo_quote").innerHTML = quoteImage[resultTwo].quote[Math.floor(Math.random() * quoteImage[resultTwo].quote.length)];
         }
         else {
           combine();
         }
       }
 
-      function combineMix() {
-          document.getElementById("duo").style.display = "block";
-          var resultOne = list[Math.floor(Math.random() * 10)];
-          var mixMeOne = list[Math.floor(Math.random() * 10)];
-          var resultTwo = list[Math.floor(Math.random() * 10)];
-          var mixMeTwo = list[Math.floor(Math.random() * 10)];
-          if (resultOne != resultTwo && mixMeOne != mixMeTwo) {
-            document.getElementById("image").innerHTML = resultOne;
-            document.getElementById("quote").innerHTML = quoteImage[mixMeOne].quote[Math.floor(Math.random() * 2)];
-            document.getElementById("duo_image").innerHTML = resultTwo;
-            document.getElementById("duo_quote").innerHTML = quoteImage[mixMeTwo].quote[Math.floor(Math.random() * 2)];
-          }
-          else {
-            combine();
-          }
+  function combineMix() {
+        document.getElementById("duo").style.display = "block";
+        var resultOne = list[Math.floor(Math.random() * 10)];
+        var mixMeOne = list[Math.floor(Math.random() * 10)];
+        var resultTwo = list[Math.floor(Math.random() * 10)];
+        var mixMeTwo = list[Math.floor(Math.random() * 10)];
+        if (resultOne != resultTwo && mixMeOne != mixMeTwo) {
+          document.getElementById("image").innerHTML = resultOne;
+          document.getElementById("quote").innerHTML = quoteImage[mixMeOne].quote[Math.floor(Math.random() * quoteImage[mixMeOne].quote.length)];
+          document.getElementById("duo_image").innerHTML = resultTwo;
+          document.getElementById("duo_quote").innerHTML = quoteImage[mixMeTwo].quote[Math.floor(Math.random() * quoteImage[mixMeTwo].quote.length)];
         }
+        else {
+          combine();
+        }
+      }
 
     </script>
   </head>
