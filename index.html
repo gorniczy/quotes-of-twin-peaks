@@ -33,7 +33,7 @@
                 "My Laura, my baby"]
         },
       Bob: {
-        image: "...",
+        image: "images/bob.jpg",
         quote: ["I will kill again",
                 "Cooper",
                 "test",
@@ -76,16 +76,18 @@
   function randomize() {
       document.getElementById("duo").style.display = "none";
       var result = list[Math.floor(Math.random() * 10)];
-       document.getElementById("image").innerHTML = result;
+       document.getElementById("image").src = quoteImage[result].image;
+       document.getElementById("image").alt = "image of " + result;
        document.getElementById("quote").innerHTML = quoteImage[result].quote[Math.floor(Math.random() * quoteImage[result].quote.length)];
   }
 
   function mix() {
         document.getElementById("duo").style.display = "none";
         var result = list[Math.floor(Math.random() * 10)];
-         document.getElementById("image").innerHTML = result;
+          document.getElementById("image").src = quoteImage[result].image;
+          document.getElementById("image").alt = "image of " + result;
         var mixMe = list[Math.floor(Math.random() * 10)];
-         document.getElementById("quote").innerHTML = quoteImage[mixMe].quote[Math.floor(Math.random() * quoteImage[result].quote.length)];
+         document.getElementById("quote").innerHTML = quoteImage[mixMe].quote[Math.floor(Math.random() * quoteImage[mixMe].quote.length)];
   }
 
   function combine() {
@@ -93,9 +95,11 @@
         var resultOne = list[Math.floor(Math.random() * 10)];
         var resultTwo = list[Math.floor(Math.random() * 10)];
         if (resultOne != resultTwo) {
-          document.getElementById("image").innerHTML = resultOne;
+          document.getElementById("image").src = quoteImage[resultOne].image;
+          document.getElementById("image").alt = "image of " + resultOne;
           document.getElementById("quote").innerHTML = quoteImage[resultOne].quote[Math.floor(Math.random() * quoteImage[resultOne].quote.length)];
-          document.getElementById("duo_image").innerHTML = resultTwo;
+          document.getElementById("duo_image").src = quoteImage[resultTwo].image;
+          document.getElementById("duo_image").alt = "image of " + resultTwo;
           document.getElementById("duo_quote").innerHTML = quoteImage[resultTwo].quote[Math.floor(Math.random() * quoteImage[resultTwo].quote.length)];
         }
         else {
@@ -110,9 +114,11 @@
         var resultTwo = list[Math.floor(Math.random() * 10)];
         var mixMeTwo = list[Math.floor(Math.random() * 10)];
         if (resultOne != resultTwo && mixMeOne != mixMeTwo) {
-          document.getElementById("image").innerHTML = resultOne;
+          document.getElementById("image").src = quoteImage[resultOne].image;
+          document.getElementById("image").alt = "image of " + resultOne;
           document.getElementById("quote").innerHTML = quoteImage[mixMeOne].quote[Math.floor(Math.random() * quoteImage[mixMeOne].quote.length)];
-          document.getElementById("duo_image").innerHTML = resultTwo;
+          document.getElementById("duo_image").src = quoteImage[resultTwo].image;
+          document.getElementById("duo_image").alt = "image of " + resultTwo;
           document.getElementById("duo_quote").innerHTML = quoteImage[mixMeTwo].quote[Math.floor(Math.random() * quoteImage[mixMeTwo].quote.length)];
         }
         else {
@@ -133,15 +139,21 @@
       </button>
       <button onclick="combineMix()">Combine Mix Me!
     </div>
-    <div class="grid">
-      <div id = "solo">
-        <h1 id="image">
-        </h1>
+    <div id="grid_one">
+      <div id= "solo">
+        <img src="" id="image" alt="">
         <h3 id="quote">
         </h3>
       </div>
-      <div id = "duo">
-        <h1 id="duo_image">
+    </div>
+    <div id="grid_two">
+      <div id= "uno">
+        <img src="" id="image" alt="">
+        <h3 id="quote">
+        </h3>
+      </div>
+      <div id= "duo">
+        <img src="" id="duo_image" alt="">
         </h1>
         <h3 id="duo_quote">
         </h3>
