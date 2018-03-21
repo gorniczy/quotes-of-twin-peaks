@@ -18,17 +18,17 @@
 
       var quoteImage = {
       Audrey: {
-        image: "...",
+        image: "images/audrey.jpg",
         quote: ["I'm Audrey Horne and I get what I want",
                 "Don't make me leave!"]
         },
       Cooper: {
-        image: "...",
+        image: "images/cooper.png",
         quote: ["Damn fine cup of coffee",
                 "Diane..."]
         },
       Leeland: {
-        image: "...",
+        image: "images/leeland.jpg",
         quote: ["Let's dance",
                 "My Laura, my baby"]
         },
@@ -42,39 +42,40 @@
                 "test4"]
         },
       Harry: {
-        image: "...",
+        image: "images/harry.jpg",
         quote: ["Get him out of here",
                 "Where's Josie?"]
         },
       Andy: {
-        image: "...",
-        quote: ["I'm a whole damn sea",
+        image: "images/andy.jpg",
+        quote: ["I'm a whole damn town",
                 "Let's be friends"]
         },
       Leo: {
-        image: "...",
+        image: "images/leo.png",
         quote: ["Where's my shirt?",
                 "You've been a bad girl"]
         },
       Norma: {
-        image: "...",
+        image: "images/norma.jpg",
         quote: ["I'd rather be his whore than your wife",
                 "Welcom to RR"]
         },
       James: {
-        image: "...",
+        image: "images/james.jpg",
         quote: ["That's wrong",
                 "I can't"]
         },
       Waldo: {
-        image: "...",
+        image: "images/waldo.jpg",
         quote: ["Laura, Laura",
                 "Leo, Leo"]
         }
       }
 
   function randomize() {
-      document.getElementById("duo").style.display = "none";
+      document.getElementById("grid_one").style.display = "block";
+      document.getElementById("grid_two").style.display = "none";
       var result = list[Math.floor(Math.random() * 10)];
        document.getElementById("image").src = quoteImage[result].image;
        document.getElementById("image").alt = "image of " + result;
@@ -82,7 +83,8 @@
   }
 
   function mix() {
-        document.getElementById("duo").style.display = "none";
+        document.getElementById("grid_one").style.display = "block";
+        document.getElementById("grid_two").style.display = "none";
         var result = list[Math.floor(Math.random() * 10)];
           document.getElementById("image").src = quoteImage[result].image;
           document.getElementById("image").alt = "image of " + result;
@@ -91,16 +93,17 @@
   }
 
   function combine() {
-        document.getElementById("duo").style.display = "block";
+        document.getElementById("grid_two").style.display = "inline-grid";
+        document.getElementById("grid_one").style.display = "none";
         var resultOne = list[Math.floor(Math.random() * 10)];
         var resultTwo = list[Math.floor(Math.random() * 10)];
         if (resultOne != resultTwo) {
-          document.getElementById("image").src = quoteImage[resultOne].image;
-          document.getElementById("image").alt = "image of " + resultOne;
-          document.getElementById("quote").innerHTML = quoteImage[resultOne].quote[Math.floor(Math.random() * quoteImage[resultOne].quote.length)];
-          document.getElementById("duo_image").src = quoteImage[resultTwo].image;
-          document.getElementById("duo_image").alt = "image of " + resultTwo;
-          document.getElementById("duo_quote").innerHTML = quoteImage[resultTwo].quote[Math.floor(Math.random() * quoteImage[resultTwo].quote.length)];
+          document.getElementById("image_1").src = quoteImage[resultOne].image;
+          document.getElementById("image_1").alt = "image of " + resultOne;
+          document.getElementById("quote_1").innerHTML = quoteImage[resultOne].quote[Math.floor(Math.random() * quoteImage[resultOne].quote.length)];
+          document.getElementById("image_2").src = quoteImage[resultTwo].image;
+          document.getElementById("image_2").alt = "image of " + resultTwo;
+          document.getElementById("quote_2").innerHTML = quoteImage[resultTwo].quote[Math.floor(Math.random() * quoteImage[resultTwo].quote.length)];
         }
         else {
           combine();
@@ -108,18 +111,19 @@
       }
 
   function combineMix() {
-        document.getElementById("duo").style.display = "block";
+        document.getElementById("grid_two").style.display = "inline-grid";
+        document.getElementById("grid_one").style.display = "none";
         var resultOne = list[Math.floor(Math.random() * 10)];
         var mixMeOne = list[Math.floor(Math.random() * 10)];
         var resultTwo = list[Math.floor(Math.random() * 10)];
         var mixMeTwo = list[Math.floor(Math.random() * 10)];
         if (resultOne != resultTwo && mixMeOne != mixMeTwo) {
-          document.getElementById("image").src = quoteImage[resultOne].image;
-          document.getElementById("image").alt = "image of " + resultOne;
-          document.getElementById("quote").innerHTML = quoteImage[mixMeOne].quote[Math.floor(Math.random() * quoteImage[mixMeOne].quote.length)];
-          document.getElementById("duo_image").src = quoteImage[resultTwo].image;
-          document.getElementById("duo_image").alt = "image of " + resultTwo;
-          document.getElementById("duo_quote").innerHTML = quoteImage[mixMeTwo].quote[Math.floor(Math.random() * quoteImage[mixMeTwo].quote.length)];
+          document.getElementById("image_1").src = quoteImage[resultOne].image;
+          document.getElementById("image_1").alt = "image of " + resultOne;
+          document.getElementById("quote_1").innerHTML = quoteImage[mixMeOne].quote[Math.floor(Math.random() * quoteImage[mixMeOne].quote.length)];
+          document.getElementById("image_2").src = quoteImage[resultTwo].image;
+          document.getElementById("image_2").alt = "image of " + resultTwo;
+          document.getElementById("quote_2").innerHTML = quoteImage[mixMeTwo].quote[Math.floor(Math.random() * quoteImage[mixMeTwo].quote.length)];
         }
         else {
           combine();
@@ -129,7 +133,7 @@
     </script>
   </head>
   <body>
-    <div class="buttons">
+    <div id="buttons">
       <button onclick="randomize()">Quote Me!
       </button>
       <button onclick="mix()">Mix Me!
@@ -140,22 +144,22 @@
       <button onclick="combineMix()">Combine Mix Me!
     </div>
     <div id="grid_one">
-      <div id= "solo">
+      <div id= "mono">
         <img src="" id="image" alt="">
         <h3 id="quote">
         </h3>
       </div>
     </div>
     <div id="grid_two">
-      <div id= "uno">
-        <img src="" id="image" alt="">
-        <h3 id="quote">
+      <div id= "stereo_1">
+        <img src="" id="image_1" alt="">
+        <h3 id="quote_1">
         </h3>
       </div>
-      <div id= "duo">
-        <img src="" id="duo_image" alt="">
+      <div id= "stereo_2">
+        <img src="" id="image_2" alt="">
         </h1>
-        <h3 id="duo_quote">
+        <h3 id="quote_2">
         </h3>
       </div>
     </div>
