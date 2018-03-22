@@ -73,6 +73,20 @@
         }
       }
 
+  function switchMono()  {
+    document.getElementById("coffee_1").style.display = "inline";
+    document.getElementById("pie_1").style.display = "inline";
+    document.getElementById("coffee_2").style.display = "none";
+    document.getElementById("pie_2").style.display = "none";
+  }
+
+  function switchStereo()  {
+    document.getElementById("coffee_2").style.display = "inline";
+    document.getElementById("pie_2").style.display = "inline";
+    document.getElementById("coffee_1").style.display = "none";
+    document.getElementById("pie_1").style.display = "none";
+  }
+
   function randomize() {
       document.getElementById("grid_one").style.display = "block";
       document.getElementById("grid_two").style.display = "none";
@@ -134,14 +148,14 @@
   </head>
   <body>
     <div id="buttons">
-      <button onclick="randomize()">Quote Me!
+      <img src="images/coffee.png" id="coffee_1" alt="coffee icon" onclick="randomize()">
+      <img src="images/pie.png" id="pie_1" alt="pie icon" onclick="mix()">
+      <img src="images/coffee.png" id="coffee_2" alt="coffee icon" onclick="combine()">
+      <img src="images/pie.png" id="pie_2" alt="pie icon" onclick="combineMix()">
+      <button onclick="switchMono()">Mono
       </button>
-      <button onclick="mix()">Mix Me!
       </button>
-      <button onclick="combine()">Combine Me!
-      </button>
-      </button>
-      <button onclick="combineMix()">Combine Mix Me!
+      <button onclick="switchStereo()">Stereo
     </div>
     <div id="grid_one">
       <div id= "mono">
