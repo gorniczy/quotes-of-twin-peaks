@@ -32,3 +32,9 @@
 #coffee_2, #pie_2 {
   display: none;
 }
+
+body {
+background-image: url("../images/rectangle 2.png"), url("../images/rectangle 1.png");
+background-repeat: no-repeat;
+background-position: -77px -174px, 655px 54px;
+}
