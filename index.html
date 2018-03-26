@@ -143,15 +143,21 @@
     </script>
   </head>
   <body>
-    <div id="buttons">
-      <img src="images/coffee.png" id="coffee_1" alt="coffee icon" onclick="randomize()">
-      <img src="images/pie.png" id="pie_1" alt="pie icon" onclick="mix()">
-      <img src="images/coffee.png" id="coffee_2" alt="coffee icon" onclick="combine()">
-      <img src="images/pie.png" id="pie_2" alt="pie icon" onclick="combineMix()">
+    <div class="switch">
       <button onclick="switchMono()">Mono
       </button>
-      </button>
       <button onclick="switchStereo()">Stereo
+      </button>
+    </div>
+    <div class="first_page">
+      <img src="images/logo.png" alt="logo" class="logo">
+      <p class="title">TWIN PEAKS QUOTE MACHINE</p>
+      <div id="buttons">
+        <img src="images/coffee.png" id="coffee_1" alt="coffee icon" onclick="randomize()">
+        <img src="images/pie.png" id="pie_1" alt="pie icon" onclick="mix()">
+        <img src="images/coffee.png" id="coffee_2" alt="coffee icon" onclick="combine()">
+        <img src="images/pie.png" id="pie_2" alt="pie icon" onclick="combineMix()">
+      </div>
     </div>
     <div id="grid_one">
       <div id= "mono">
