@@ -2,6 +2,12 @@
     outline: 1px solid red;
 }*/
 
+#second_page {
+  display: none;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /* text */
 
 .title {
@@ -16,23 +22,64 @@ margin: 1% auto 3% auto;
 .logo {
   width: 20%;
   display: block;
-  margin-top: 10%;
+  margin-top: 7%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.switch {
-  text-align: right;
+.logo2 {
+  width: 8%;
+  margin-top: 1.5%;
+  margin-left: 1.5%;
+  vertical-align: middle;
 }
 
-#buttons {
+#switch1 {
+  display: inline-block;
+  width: auto;
+  vertical-align: top;
+  margin-left: 95%;
+  margin-top: 1%;
+}
+
+#switch2 {
+  display: inline-block;
+  width: auto;
+  vertical-align: top;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+#switch1 button {
+  display: block;
+}
+
+#switch2 button {
+  display: block;
+}
+
+#buttons1 {
   text-align: center;
 }
 
-#buttons img {
+#buttons2 {
+  display: inline-block;
+  width: 15%;
+  vertical-align: top;
+  margin-left: 65%;
+  margin-top: 1%;
+}
+
+#buttons1 img {
   width: 7%;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+#buttons2 img {
+  width: 24%;
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 #grid_one {
