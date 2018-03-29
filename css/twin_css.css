@@ -1,6 +1,6 @@
-/* {
+* {
     outline: 1px solid red;
-}*/
+}
 
 #second_page {
   display: none;
@@ -107,6 +107,10 @@ margin: 1% auto 3% auto;
 
 #coffee_2, #pie_2 {
   display: none;
+}
+
+#grid_one img {
+  width: 30%;
 }
 
 html {
