@@ -83,11 +83,13 @@ margin: 1% auto 3% auto;
 }
 
 #grid_one {
+  display: none;
   margin: 50px 5%;
   width: 90%;
 }
 
 #grid_two {
+  display: none;
   margin: 50px 5%;
   width: 90%;
   grid-template-columns: repeat(2, 1fr);
@@ -96,21 +98,17 @@ margin: 1% auto 3% auto;
 #grid_one img {
   display: block;
   margin: auto;
-  width: 50%;
+  max-height: 500px;
 }
 
 #grid_two img {
   display: block;
   margin: auto;
-  width: 70%;
+  height: 400px;
 }
 
 #coffee_2, #pie_2 {
   display: none;
-}
-
-#grid_one img {
-  width: 30%;
 }
 
 html {
