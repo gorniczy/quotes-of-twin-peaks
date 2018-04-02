@@ -36,26 +36,30 @@ margin: 1% auto 3% auto;
 
 #switch1 {
   display: inline-block;
-  width: auto;
   vertical-align: top;
-  margin-left: 95%;
+  width: 6%;
+  margin-left: 92%;
   margin-top: 1%;
 }
 
 #switch2 {
   display: inline-block;
-  width: auto;
   vertical-align: top;
+  width: 6%;
   margin-left: 1%;
   margin-top: 1%;
 }
 
-#switch1 button {
+#switch1 img {
   display: block;
+  width: 100%;
+  padding: 10% 0%;
 }
 
-#switch2 button {
+#switch2 img {
   display: block;
+  width: 100%;
+  padding: 10% 0%;
 }
 
 #buttons1 {
@@ -66,7 +70,7 @@ margin: 1% auto 3% auto;
   display: inline-block;
   width: 20%;
   vertical-align: top;
-  margin-left: 64%;
+  margin-left: 61%;
   margin-top: 1%;
 }
 

@@ -18,52 +18,62 @@
 
       var quoteImage = {
       Laura: {
-        image: "images/laura.png",
+        image: ["images/laura.png",
+                "images/laura_2.png"],
         quote: ["I'm Audrey Horne and I get what I want",
                 "Don't make me leave!"]
         },
       Audrey: {
-        image: "images/audrey.png",
+        image: ["images/audrey.png",
+                "images/audrey_2.png"],
         quote: ["Damn fine cup of coffee",
                 "Diane..."]
         },
       Cooper: {
-        image: "images/cooper.png",
+        image: ["images/cooper.png",
+                "images/cooper_2.png"],
         quote: ["Let's dance",
                 "My Laura, my baby"]
         },
       Bob: {
-        image: "images/bob.png",
+        image: ["images/bob.png",
+                "images/bob_2.png"],
         quote: ["I will kill again",
                 "Cooper"]
         },
       Leland: {
-        image: "images/leland.png",
+        image: ["images/leland.png",
+                "images/leland_2.png"],
         quote: ["Get him out of here",
                 "Where's Josie?"]
         },
       Andy: {
-        image: "images/andy.png",
+        image: ["images/andy.png",
+                "images/andy_2.png"],
         quote: ["I'm a whole damn town",
                 "Let's be friends"]
         },
       Lucy: {
-        image: "images/lucy.png",
+        image: ["images/lucy.png",
+                "images/lucy_2.png"],
         quote: ["Where's my shirt?",
                 "You've been a bad girl"]
         },
       Margaret: {
-        image: "images/margaret.png",
+        image: ["images/margaret.png",
+                "images/margaret_2.png"],
         quote: ["I'd rather be his whore than your wife",
                 "Welcom to RR"]
         },
       Leo: {
-        image: "images/leo.png",
+        image: ["images/leo.png",
+                "images/leo_2.png"],
         quote: ["That's wrong",
                 "I can't"]
         },
       Waldo: {
-        image: "images/waldo.png",
+        image: ["images/waldo.png",
+                "images/waldo_2.png"],
         quote: ["Laura, Laura",
                 "Leo, no",
                 "Don't go there",
@@ -89,7 +99,7 @@
       document.getElementById("grid_one").style.display = "block";
       document.getElementById("grid_two").style.display = "none";
       var result = list[Math.floor(Math.random() * 10)];
-       document.getElementById("image").src = quoteImage[result].image;
+       document.getElementById("image").src = quoteImage[result].image[0];
        document.getElementById("image").alt = "image of " + result;
        document.getElementById("quote").innerHTML = quoteImage[result].quote[Math.floor(Math.random() * quoteImage[result].quote.length)];
        document.getElementById("first_page").style.display = "none";
@@ -100,7 +110,7 @@
         document.getElementById("grid_one").style.display = "block";
         document.getElementById("grid_two").style.display = "none";
         var result = list[Math.floor(Math.random() * 10)];
-          document.getElementById("image").src = quoteImage[result].image;
+          document.getElementById("image").src = quoteImage[result].image[0];
           document.getElementById("image").alt = "image of " + result;
         var mixMe = list[Math.floor(Math.random() * 10)];
          document.getElementById("quote").innerHTML = quoteImage[mixMe].quote[Math.floor(Math.random() * quoteImage[mixMe].quote.length)];
@@ -114,10 +124,10 @@
         var resultOne = list[Math.floor(Math.random() * 10)];
         var resultTwo = list[Math.floor(Math.random() * 10)];
         if (resultOne != resultTwo) {
-          document.getElementById("image_1").src = quoteImage[resultOne].image;
+          document.getElementById("image_1").src = quoteImage[resultOne].image[0];
           document.getElementById("image_1").alt = "image of " + resultOne;
           document.getElementById("quote_1").innerHTML = quoteImage[resultOne].quote[Math.floor(Math.random() * quoteImage[resultOne].quote.length)];
-          document.getElementById("image_2").src = quoteImage[resultTwo].image;
+          document.getElementById("image_2").src = quoteImage[resultTwo].image[1];
           document.getElementById("image_2").alt = "image of " + resultTwo;
           document.getElementById("quote_2").innerHTML = quoteImage[resultTwo].quote[Math.floor(Math.random() * quoteImage[resultTwo].quote.length)];
           document.getElementById("first_page").style.display = "none";
@@ -136,10 +146,10 @@
         var resultTwo = list[Math.floor(Math.random() * 10)];
         var mixMeTwo = list[Math.floor(Math.random() * 10)];
         if (resultOne != resultTwo && mixMeOne != mixMeTwo) {
-          document.getElementById("image_1").src = quoteImage[resultOne].image;
+          document.getElementById("image_1").src = quoteImage[resultOne].image[0];
           document.getElementById("image_1").alt = "image of " + resultOne;
           document.getElementById("quote_1").innerHTML = quoteImage[mixMeOne].quote[Math.floor(Math.random() * quoteImage[mixMeOne].quote.length)];
-          document.getElementById("image_2").src = quoteImage[resultTwo].image;
+          document.getElementById("image_2").src = quoteImage[resultTwo].image[1];
           document.getElementById("image_2").alt = "image of " + resultTwo;
           document.getElementById("quote_2").innerHTML = quoteImage[mixMeTwo].quote[Math.floor(Math.random() * quoteImage[mixMeTwo].quote.length)];
           document.getElementById("first_page").style.display = "none";
@@ -162,18 +172,22 @@
         <img src="images/pie2.png" id="pie_2" alt="pie icon" onclick="combineMix()">
       </div>
       <div id="switch2">
-        <button onclick="switchMono()">Mono
+        <img src="images/mono button.png" id="mono_button" alt="mono button" onclick="switchMono()">
+        <img src="images/stereo button.png" id="stereo_button" alt="stereo button" onclick="switchStereo()">
+        <!-- <button onclick="switchMono()">Mono
         </button>
         <button onclick="switchStereo()">Stereo
-        </button>
+        </button> -->
       </div>
     </div>
     <div id="first_page">
       <div id="switch1">
-        <button onclick="switchMono()">Mono
+        <img src="images/mono button.png" id="mono_button" alt="mono button" onclick="switchMono()">
+        <img src="images/stereo button.png" id="stereo_button" alt="stereo button" onclick="switchStereo()">
+        <!-- <button onclick="switchMono()">Mono
         </button>
         <button onclick="switchStereo()">Stereo
-        </button>
+        </button> -->
       </div>
       <img src="images/logo.png" alt="logo" class="logo">
       <p class="title">TWIN PEAKS QUOTE MACHINE</p>
