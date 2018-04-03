@@ -34,6 +34,14 @@ margin: 1% auto 3% auto;
   vertical-align: middle;
 }
 
+#quote {
+  text-align: center;
+  font-family: AmericanTypewriter-Semibold;
+  font-size: 20px;
+  color: #3A3836;
+  margin-top: 56%;
+}
+
 #switch1 {
   display: inline-block;
   vertical-align: top;
@@ -88,13 +96,14 @@ margin: 1% auto 3% auto;
 
 #grid_one {
   display: none;
-  margin: 50px 5%;
-  width: 90%;
+  margin: 0% 0% 0% 5%;
+  width: 80%;
+  grid-template-columns: 4fr 3fr;
 }
 
 #grid_two {
   display: none;
-  margin: 50px 5%;
+  margin: 1% 5%;
   width: 90%;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -102,13 +111,20 @@ margin: 1% auto 3% auto;
 #grid_one img {
   display: block;
   margin: auto;
-  max-height: 500px;
+  max-height: 700px;
 }
 
 #grid_two img {
   display: block;
   margin: auto;
   height: 400px;
+}
+
+#mono_quote {
+  background-image: url("../images/torn sheet small.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 40%;
 }
 
 #coffee_2, #pie_2 {

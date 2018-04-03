@@ -113,7 +113,7 @@
 
   function randomize() {
 
-      document.getElementById("grid_one").style.display = "block";
+      document.getElementById("grid_one").style.display = "inline-grid";
       document.getElementById("grid_two").style.display = "none";
       document.getElementById("coffee_4").style.display = "none";
       document.getElementById("pie_4").style.display = "none";
@@ -126,7 +126,7 @@
   }
 
   function mix() {
-        document.getElementById("grid_one").style.display = "block";
+        document.getElementById("grid_one").style.display = "inline-grid";
         document.getElementById("grid_two").style.display = "none";
         document.getElementById("coffee_4").style.display = "none";
         document.getElementById("pie_4").style.display = "none";
@@ -183,7 +183,13 @@
 
     </script>
   </head>
+
+<!---------------------------------------------->
+
   <body>
+
+<!-- Title page -->
+
     <div id="first_page">
       <div id="switch1">
        <img src="images/mono active button.png" id="mono_button1" alt="mono button" onclick="switchMono()">
@@ -198,6 +204,9 @@
         <img src="images/pie.png" id="pie_2" alt="pie icon" onclick="combineMix()">
       </div>
     </div>
+
+<!-- Action page -->
+
     <div id="second_page">
       <img src="images/logo2.png" alt="second logo" class="logo2">
       <div id="buttons2">
@@ -211,13 +220,21 @@
         <img src="images/stereo inactive button.png" id="stereo_button2" alt="stereo button" onclick="switchStereo()">
       </div>
     </div>
+
+<!-- Grid for one character -->
+
     <div id="grid_one">
-      <div id= "mono">
+      <div id= "mono_image">
         <img src="" id="image" alt="">
+      </div>
+      <div id= "mono_quote">
         <h3 id="quote">
         </h3>
       </div>
     </div>
+
+<!-- Grid for two characters -->
+
     <div id="grid_two">
       <div id= "stereo_1">
         <img src="" id="image_1" alt="">
@@ -231,5 +248,8 @@
         </h3>
       </div>
     </div>
+
+<!---------------------------------------------->
+
   </body>
 </html>
