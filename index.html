@@ -82,22 +82,41 @@
       }
 
   function switchMono()  {
+    document.getElementById("mono_button1").src = "images/mono active button.png";
+    document.getElementById("stereo_button1").src = "images/stereo inactive button.png";
+    document.getElementById("mono_button2").src = "images/mono active button.png";
+    document.getElementById("stereo_button2").src = "images/stereo inactive button.png";
     document.getElementById("coffee_1").style.display = "inline";
     document.getElementById("pie_1").style.display = "inline";
     document.getElementById("coffee_2").style.display = "none";
     document.getElementById("pie_2").style.display = "none";
+    document.getElementById("coffee_3").style.display = "inline";
+    document.getElementById("pie_3").style.display = "inline";
+    document.getElementById("coffee_4").style.display = "none";
+    document.getElementById("pie_4").style.display = "none";
   }
 
   function switchStereo()  {
+    document.getElementById("mono_button1").src = "images/mono inactive button.png";
+    document.getElementById("stereo_button1").src = "images/stereo active button.png";
+    document.getElementById("mono_button2").src = "images/mono inactive button.png";
+    document.getElementById("stereo_button2").src = "images/stereo active button.png";
     document.getElementById("coffee_2").style.display = "inline";
     document.getElementById("pie_2").style.display = "inline";
     document.getElementById("coffee_1").style.display = "none";
     document.getElementById("pie_1").style.display = "none";
+    document.getElementById("coffee_4").style.display = "inline";
+    document.getElementById("pie_4").style.display = "inline";
+    document.getElementById("coffee_3").style.display = "none";
+    document.getElementById("pie_3").style.display = "none";
   }
 
   function randomize() {
+
       document.getElementById("grid_one").style.display = "block";
       document.getElementById("grid_two").style.display = "none";
+      document.getElementById("coffee_4").style.display = "none";
+      document.getElementById("pie_4").style.display = "none";
       var result = list[Math.floor(Math.random() * 10)];
        document.getElementById("image").src = quoteImage[result].image[0];
        document.getElementById("image").alt = "image of " + result;
@@ -109,6 +128,8 @@
   function mix() {
         document.getElementById("grid_one").style.display = "block";
         document.getElementById("grid_two").style.display = "none";
+        document.getElementById("coffee_4").style.display = "none";
+        document.getElementById("pie_4").style.display = "none";
         var result = list[Math.floor(Math.random() * 10)];
           document.getElementById("image").src = quoteImage[result].image[0];
           document.getElementById("image").alt = "image of " + result;
@@ -163,31 +184,10 @@
     </script>
   </head>
   <body>
-    <div id="second_page">
-      <img src="images/logo2.png" alt="second logo" class="logo2">
-      <div id="buttons2">
-        <img src="images/coffee2.png" id="coffee_1" alt="coffee icon" onclick="randomize()">
-        <img src="images/pie2.png" id="pie_1" alt="pie icon" onclick="mix()">
-        <img src="images/coffee2.png" id="coffee_2" alt="coffee icon" onclick="combine()">
-        <img src="images/pie2.png" id="pie_2" alt="pie icon" onclick="combineMix()">
-      </div>
-      <div id="switch2">
-        <img src="images/mono button.png" id="mono_button" alt="mono button" onclick="switchMono()">
-        <img src="images/stereo button.png" id="stereo_button" alt="stereo button" onclick="switchStereo()">
-        <!-- <button onclick="switchMono()">Mono
-        </button>
-        <button onclick="switchStereo()">Stereo
-        </button> -->
-      </div>
-    </div>
     <div id="first_page">
       <div id="switch1">
-        <img src="images/mono button.png" id="mono_button" alt="mono button" onclick="switchMono()">
-        <img src="images/stereo button.png" id="stereo_button" alt="stereo button" onclick="switchStereo()">
-        <!-- <button onclick="switchMono()">Mono
-        </button>
-        <button onclick="switchStereo()">Stereo
-        </button> -->
+       <img src="images/mono active button.png" id="mono_button1" alt="mono button" onclick="switchMono()">
+        <img src="images/stereo inactive button.png" id="stereo_button1" alt="stereo button" onclick="switchStereo()">
       </div>
       <img src="images/logo.png" alt="logo" class="logo">
       <p class="title">TWIN PEAKS QUOTE MACHINE</p>
@@ -196,6 +196,19 @@
         <img src="images/pie.png" id="pie_1" alt="pie icon" onclick="mix()">
         <img src="images/coffee.png" id="coffee_2" alt="coffee icon" onclick="combine()">
         <img src="images/pie.png" id="pie_2" alt="pie icon" onclick="combineMix()">
+      </div>
+    </div>
+    <div id="second_page">
+      <img src="images/logo2.png" alt="second logo" class="logo2">
+      <div id="buttons2">
+        <img src="images/coffee2.png" id="coffee_3" alt="coffee icon" onclick="randomize()">
+        <img src="images/pie2.png" id="pie_3" alt="pie icon" onclick="mix()">
+        <img src="images/coffee2.png" id="coffee_4" alt="coffee icon" onclick="combine()">
+        <img src="images/pie2.png" id="pie_4" alt="pie icon" onclick="combineMix()">
+      </div>
+      <div id="switch2">
+        <img src="images/mono active button.png" id="mono_button2" alt="mono button" onclick="switchMono()">
+        <img src="images/stereo inactive button.png" id="stereo_button2" alt="stereo button" onclick="switchStereo()">
       </div>
     </div>
     <div id="grid_one">
