@@ -20,32 +20,48 @@
       Laura: {
         image: ["images/laura.png",
                 "images/laura_2.png"],
-        quote: ["I'm Audrey Horne and I get what I want",
-                "Don't make me leave!"]
+        quote: ["I hate asparagus",
+                "Does this mean I'll never grow up?",
+                "Nervous about meeting 'J' tonight."]
         },
       Audrey: {
         image: ["images/audrey.png",
                 "images/audrey_2.png"],
-        quote: ["Damn fine cup of coffee",
-                "Diane..."]
+        quote: ["Please don't make me leave.",
+                "Love stinks!"]
         },
       Cooper: {
         image: ["images/cooper.png",
                 "images/cooper_2.png"],
-        quote: ["Let's dance",
-                "My Laura, my baby"]
+        quote: ["Riding on fumes here.",
+                "That's correct, please continue.",
+                "I know who killed Laura Palmer.",
+                "I've never seen so many trees in my life.",
+                "That's what I need, clean place, reasonably priced.",
+                "We ask the questions and you answer the questions that we ask.",
+                "You've been through a lot today.",
+                "Fleshworld.",
+                "That's a lot of girl scout cookies.",
+                "I think I saw a cotton tail rabbit.",
+                "Who's the babe?",
+                "Know why I'm whittling?",
+                "Give me a donut.",
+                "Man, smell those trees, smell those douglas firs.",
+                "What goes around comes around.",
+                "A policeman's dream."]
         },
       Bob: {
         image: ["images/bob.png",
                 "images/bob_2.png"],
-        quote: ["I will kill again",
-                "Cooper"]
+        quote: ["I will kill again!",
+                "Catch you with my death bag.",
+                "You may think I've gone insane."]
         },
       Leland: {
         image: ["images/leland.png",
                 "images/leland_2.png"],
-        quote: ["Get him out of here",
-                "Where's Josie?"]
+        quote: ["Let's dance",
+                "My Laura, my baby"]
         },
       Andy: {
         image: ["images/andy.png",
@@ -56,20 +72,20 @@
       Lucy: {
         image: ["images/lucy.png",
                 "images/lucy_2.png"],
-        quote: ["Where's my shirt?",
-                "You've been a bad girl"]
+        quote: ["I'm pregnant."
+                ]
         },
       Margaret: {
         image: ["images/margaret.png",
                 "images/margaret_2.png"],
-        quote: ["I'd rather be his whore than your wife",
-                "Welcom to RR"]
+        quote: ["My log does not judge.",
+                "Ask it."]
         },
       Leo: {
         image: ["images/leo.png",
                 "images/leo_2.png"],
-        quote: ["That's wrong",
-                "I can't"]
+        quote: ["What kind of cigarettes do you smoke?",
+                "Where's my shirt?"]
         },
       Waldo: {
         image: ["images/waldo.png",
@@ -118,11 +134,18 @@
       document.getElementById("coffee_4").style.display = "none";
       document.getElementById("pie_4").style.display = "none";
       var result = list[Math.floor(Math.random() * 10)];
+      var quoted = quoteImage[result].quote[Math.floor(Math.random() * quoteImage[result].quote.length)]
        document.getElementById("image").src = quoteImage[result].image[0];
        document.getElementById("image").alt = "image of " + result;
-       document.getElementById("quote").innerHTML = quoteImage[result].quote[Math.floor(Math.random() * quoteImage[result].quote.length)];
+       document.getElementById("quote").innerHTML = quoted;
        document.getElementById("first_page").style.display = "none";
        document.getElementById("second_page").style.display = "block";
+       if (quoted.length < 60) {
+         document.getElementById("mono_quote").style.backgroundImage = "url('images/torn sheet small.png')";
+       }
+       else {
+         document.getElementById("mono_quote").style.backgroundImage = "url('images/torn sheet large.png')";
+       }
   }
 
   function mix() {
@@ -134,9 +157,16 @@
           document.getElementById("image").src = quoteImage[result].image[0];
           document.getElementById("image").alt = "image of " + result;
         var mixMe = list[Math.floor(Math.random() * 10)];
-         document.getElementById("quote").innerHTML = quoteImage[mixMe].quote[Math.floor(Math.random() * quoteImage[mixMe].quote.length)];
+        var quoted = quoteImage[mixMe].quote[Math.floor(Math.random() * quoteImage[mixMe].quote.length)];
+         document.getElementById("quote").innerHTML = quoted;
          document.getElementById("first_page").style.display = "none";
          document.getElementById("second_page").style.display = "block";
+         if (quoted.length < 60) {
+           document.getElementById("mono_quote").style.backgroundImage = "url('images/torn sheet small.png')";
+         }
+         else {
+           document.getElementById("mono_quote").style.backgroundImage = "url('images/torn sheet large.png')";
+         }
   }
 
   function combine() {
@@ -228,8 +258,8 @@
         <img src="" id="image" alt="">
       </div>
       <div id= "mono_quote">
-        <h3 id="quote">
-        </h3>
+        <p id="quote">
+        </p>
       </div>
     </div>
 
