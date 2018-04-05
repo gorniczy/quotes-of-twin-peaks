@@ -35,12 +35,13 @@ margin: 1% auto 3% auto;
 }
 
 #quote {
-  text-align: center;
   font-family: AmericanTypewriter-Semibold;
   font-size: 20px;
   color: #3A3836;
-  margin-top: 56%;
-  padding: 0% 5%;
+  position: absolute;
+  margin: 0;
+  text-align: center;
+  max-width: 90%;
 }
 
 #switch1 {
@@ -72,7 +73,9 @@ margin: 1% auto 3% auto;
 }
 
 #buttons1 {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #buttons2 {
@@ -109,7 +112,7 @@ margin: 1% auto 3% auto;
   grid-template-columns: repeat(2, 1fr);
 }
 
-#grid_one img {
+#image {
   display: block;
   margin: auto;
   max-height: 700px;
@@ -122,10 +125,17 @@ margin: 1% auto 3% auto;
 }
 
 #mono_quote {
-  background-image: url("../images/torn sheet small.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0% 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 60%;
+}
+
+#sheet {
+  width: 100%;
+  position: absolute;
 }
 
 #coffee_2, #pie_2 {

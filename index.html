@@ -134,17 +134,17 @@
       document.getElementById("coffee_4").style.display = "none";
       document.getElementById("pie_4").style.display = "none";
       var result = list[Math.floor(Math.random() * 10)];
-      var quoted = quoteImage[result].quote[Math.floor(Math.random() * quoteImage[result].quote.length)]
+      var quoted = quoteImage[result].quote[Math.floor(Math.random() * quoteImage[result].quote.length)];
        document.getElementById("image").src = quoteImage[result].image[0];
        document.getElementById("image").alt = "image of " + result;
        document.getElementById("quote").innerHTML = quoted;
        document.getElementById("first_page").style.display = "none";
        document.getElementById("second_page").style.display = "block";
-       if (quoted.length < 60) {
-         document.getElementById("mono_quote").style.backgroundImage = "url('images/torn sheet small.png')";
+        if (quoted.length < 60) {
+         document.getElementById("sheet").src = "images/torn sheet small.png";
        }
        else {
-         document.getElementById("mono_quote").style.backgroundImage = "url('images/torn sheet large.png')";
+         document.getElementById("sheet").src = "images/torn sheet large.png";
        }
   }
 
@@ -162,10 +162,10 @@
          document.getElementById("first_page").style.display = "none";
          document.getElementById("second_page").style.display = "block";
          if (quoted.length < 60) {
-           document.getElementById("mono_quote").style.backgroundImage = "url('images/torn sheet small.png')";
-         }
-         else {
-           document.getElementById("mono_quote").style.backgroundImage = "url('images/torn sheet large.png')";
+          document.getElementById("sheet").src = "images/torn sheet small.png";
+          }
+        else {
+          document.getElementById("sheet").src = "images/torn sheet large.png";
          }
   }
 
@@ -258,8 +258,8 @@
         <img src="" id="image" alt="">
       </div>
       <div id= "mono_quote">
-        <p id="quote">
-        </p>
+        <img src="images/torn sheet small.png" id="sheet" alt="torn sheet">
+        <p id="quote"></p>
       </div>
     </div>
 
