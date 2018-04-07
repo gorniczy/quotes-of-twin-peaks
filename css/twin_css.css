@@ -1,6 +1,6 @@
-/* {
+* {
     outline: 1px solid red;
-}*/
+}
 
 #second_page {
   display: none;
@@ -109,7 +109,7 @@ margin: 1% auto 3% auto;
   display: none;
   margin: 1% 5%;
   width: 90%;
-  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
 }
 
 #image {
