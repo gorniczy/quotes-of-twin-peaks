@@ -1,6 +1,6 @@
-/* {
+* {
     outline: 1px solid red;
-}*/
+}
 
 #second_page {
   display: none;
@@ -37,6 +37,16 @@ margin: 1% auto 3% auto;
 #quote {
   font-family: AmericanTypewriter-Semibold;
   font-size: 20px;
+  color: #3A3836;
+  position: absolute;
+  margin: 0;
+  text-align: center;
+  max-width: 90%;
+}
+
+#quote_1, #quote_2 {
+  font-family: AmericanTypewriter-Semibold;
+  font-size: 16px;
   color: #3A3836;
   position: absolute;
   margin: 0;
@@ -109,7 +119,6 @@ margin: 1% auto 3% auto;
   display: none;
   margin: 1% 5%;
   width: 90%;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 #image {
@@ -118,10 +127,39 @@ margin: 1% auto 3% auto;
   max-height: 700px;
 }
 
-#grid_two img {
-  display: block;
+#stereo_1 {
+  align-self: flex-end;
+}
+
+#stereo_2 {
+  align-self: flex-start;
+}
+
+#image_1, #image_2 {
   margin: auto;
   height: 400px;
+  position: absolute;
+  z-index: -1;
+}
+
+.quoteplace {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 0;
+  width: 25%;
+}
+
+#sheet_1, #sheet_2 {
+  width: 100%;
+}
+
+#stereo_1. #stereo_2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 #mono_quote {

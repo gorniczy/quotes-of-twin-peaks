@@ -186,7 +186,7 @@
   }
 
   function combine() {
-        document.getElementById("grid_two").style.display = "inline-grid";
+        document.getElementById("grid_two").style.display = "flex";
         document.getElementById("grid_one").style.display = "none";
         var resultOne = list[Math.floor(Math.random() * 10)];
         var resultTwo = list[Math.floor(Math.random() * 10)];
@@ -206,7 +206,7 @@
       }
 
   function combineMix() {
-        document.getElementById("grid_two").style.display = "inline-grid";
+        document.getElementById("grid_two").style.display = "flex";
         document.getElementById("grid_one").style.display = "none";
         var resultOne = list[Math.floor(Math.random() * 10)];
         var mixMeOne = list[Math.floor(Math.random() * 10)];
@@ -283,15 +283,24 @@
 
     <div id="grid_two">
       <div id= "stereo_1">
-        <img src="" id="image_1" alt="">
-        <h3 id="quote_1">
-        </h3>
+        <div>
+          <img src="" id="image_1" alt="">
+        </div>
+        <div class="quoteplace">
+          <img src="images/torn sheet small.png" id="sheet_1" alt="torn sheet">
+          <p id="quote_1">
+          </p>
+        </div>
       </div>
       <div id= "stereo_2">
-        <img src="" id="image_2" alt="">
-        </h1>
-        <h3 id="quote_2">
-        </h3>
+        <div>
+          <img src="" id="image_2" alt="">
+        </div>
+        <div class="quoteplace">
+          <img src="images/torn sheet small.png" id="sheet_2" alt="torn sheet">
+          <p id="quote_2">
+          </p>
+        </div>
       </div>
     </div>
 
