@@ -9,11 +9,11 @@ html {
 }
 
 body {
-min-height: 100%;
-background-image: url("../images/triangle1.png"), url("../images/triangle2.png"), url("../images/paper.jpg");
-background-repeat: no-repeat;
-background-size: 50%, 50%, 100%;
-background-position: left top, right bottom;
+  min-height: 100%;
+  background-image: url("../images/triangle1.png"),   url("../images/triangle2.png"), url("../images/paper.jpg");
+  background-repeat: no-repeat;
+  background-size: 50%, 50%, 100%;
+  background-position: left top, right bottom;
 }
 
 #second_page {
@@ -25,27 +25,12 @@ background-position: left top, right bottom;
 /* text */
 
 .title {
-font-family: AmericanTypewriter;
-font-size: 36px;
-color: #448002;
-text-shadow: 1px 1px 3px rgba(0,0,0,0.50);
-text-align: center;
-margin: 1% auto 3% auto;
-}
-
-.logo {
-  width: 20%;
-  display: block;
-  margin-top: 7%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.logo2 {
-  width: 8%;
-  margin-top: 1.5%;
-  margin-left: 1.5%;
-  vertical-align: middle;
+  font-family: AmericanTypewriter;
+  font-size: 36px;
+  color: #448002;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.50);
+  text-align: center;
+  margin: 1% auto 3% auto;
 }
 
 #quote {
@@ -65,7 +50,22 @@ margin: 1% auto 3% auto;
   position: absolute;
   margin: 0;
   text-align: center;
-  max-width: 90%;
+  max-width: 40%;
+}
+
+.logo {
+  width: 20%;
+  display: block;
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo2 {
+  width: 8%;
+  margin-top: 1.5%;
+  margin-left: 1.5%;
+  vertical-align: middle;
 }
 
 /* buttons */
@@ -148,35 +148,23 @@ margin: 1% auto 3% auto;
 
 #grid_two {
   display: none;
-  margin: 1% 5%;
-  width: 90%;
+
 }
 
-#stereo_1 {
-  align-self: flex-end;
-}
-
-#stereo_2 {
-  align-self: flex-start;
-}
-
-#stereo_1. #stereo_2 {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.quoteplace {
+#torn_sheet_1, #torn_sheet_2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  z-index: 0;
-  width: 25%;
 }
 
-/* character images */
+#torn_sheet_1 {
+  top: 75%;
+  right: 60%;
+}
+
+/* character and quote sheet images */
 
 #image {
   display: block;
@@ -184,18 +172,27 @@ margin: 1% auto 3% auto;
   max-height: 700px;
 }
 
-#image_1, #image_2 {
-  margin: auto;
-  height: 400px;
-  position: absolute;
-  z-index: -1;
-}
-
 #sheet {
   width: 100%;
   position: absolute;
 }
 
+#image_1, #image_2 {
+  height: 60%;
+}
+
+#image_1 {
+  position: absolute;
+  bottom: 5%;
+  right: 60%;
+}
+
+#image_2 {
+  position: absolute;
+  top: 5%;
+  right: 30%;
+}
+
 #sheet_1, #sheet_2 {
-  width: 100%;
+  width: 40%;
 }
