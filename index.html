@@ -3,6 +3,9 @@
   <head>
     <link href="css/twin_css.css" type="text/css" rel="stylesheet">
     <script>
+
+// The list of characters to randomly choose from
+
       var list = {
         0: "Laura",
         1: "Audrey",
@@ -15,6 +18,8 @@
         8: "Leo",
         9: "Waldo"
       }
+
+// The list of pictures and quotes assigned to each character
 
       var quoteImage = {
       Laura: {
@@ -113,6 +118,8 @@
         }
       }
 
+// Functions to choose between 'monologue' and 'dialogue' quoting
+
   function switchMono()  {
     document.getElementById("mono_button1").src = "images/mono active button.png";
     document.getElementById("stereo_button1").src = "images/stereo inactive button.png";
@@ -143,6 +150,8 @@
     document.getElementById("pie_3").style.display = "none";
   }
 
+// Basic 'monologue' quote fucntion
+
   function randomize() {
 
       document.getElementById("grid_one").style.display = "inline-grid";
@@ -163,6 +172,8 @@
          document.getElementById("sheet").src = "images/torn sheet large.png";
        }
   }
+
+// Mixed 'monologue' quote fucntion (random character to random quote)
 
   function mix() {
         document.getElementById("grid_one").style.display = "inline-grid";
@@ -185,6 +196,8 @@
          }
   }
 
+// Basic "dialogue" quote function
+
   function combine() {
         document.getElementById("grid_two").style.display = "flex";
         document.getElementById("grid_one").style.display = "none";
@@ -204,6 +217,8 @@
           combine();
         }
       }
+
+// Mixed 'dialogue' quote fucntion (2 random characters to 2 random quotes)
 
   function combineMix() {
         document.getElementById("grid_two").style.display = "flex";
