@@ -1,6 +1,6 @@
-* {
+/* {
     outline: 1px solid red;
-}
+}*/
 
 /* page */
 
@@ -50,7 +50,7 @@ body {
   position: absolute;
   margin: 0;
   text-align: center;
-  max-width: 40%;
+  max-width: 90%;
 }
 
 .logo {
@@ -161,7 +161,12 @@ body {
 
 #torn_sheet_1 {
   top: 75%;
-  right: 60%;
+  right: 70%;
+}
+
+#torn_sheet_2 {
+  top: 40%;
+  right: 10%;
 }
 
 /* character and quote sheet images */
@@ -169,7 +174,7 @@ body {
 #image {
   display: block;
   margin: auto;
-  max-height: 700px;
+  height: 700px;
 }
 
 #sheet {
@@ -194,5 +199,9 @@ body {
 }
 
 #sheet_1, #sheet_2 {
-  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
 }
