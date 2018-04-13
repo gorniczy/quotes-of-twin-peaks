@@ -1,6 +1,6 @@
-* {
+/* {
     outline: 1px solid red;
-}
+}*/
 
 /* page */
 
@@ -50,7 +50,7 @@ body {
   position: absolute;
   margin: 0;
   text-align: center;
-  max-width: 20%;
+  max-width: 50%;
 }
 
 .logo {
@@ -132,8 +132,11 @@ body {
 
 #grid_one {
   display: none;
-  margin: 0% 0% 0% 5%;
-  width: 80%;
+  width: 90%;
+  height: 90vh;
+  position: fixed;
+  top: 10%;
+  z-index: -1;
   grid-template-columns: 4fr 3fr;
 }
 
@@ -156,19 +159,22 @@ body {
 }
 
 #stereo_1, #stereo_2 {
-  width: 50%;
+  width: 49%;
   height: 70%;
-  display: grid;
+  display: inline-grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   justify-items: center;
 }
 
 #stereo_1 {
-  align-self: flex-end;
+position: absolute;
+bottom: 0px;
 }
 
 #stereo_2 {
-  align-self: flex-start;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 #torn_sheet_1, #torn_sheet_2 {
@@ -179,11 +185,11 @@ body {
 }
 
 #torn_sheet_1 {
-  grid-area: 3/1/3/3;
+  grid-area: 3/1/span 1/ span 2;
 }
 
 #torn_sheet_2 {
-  grid-area: 2/2/3/4;
+  grid-area: 3/2/spna 1/span 2;
 }
 
 /* character and quote sheet images */
@@ -205,11 +211,11 @@ body {
 }
 
 #character_1 {
-  grid-area: 1/2/4/3;
+  grid-area: 1/2/span 3/ span 2;
 }
 
 #character_2 {
-  grid-area: 1/1/4/3;
+  grid-area: 1/1/span 3/ span 2;
 }
 
 #sheet_1, #sheet_2 {
