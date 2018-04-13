@@ -198,7 +198,7 @@
 
 // Basic "dialogue" quote function
 
-  function combine() {
+        function combine() {
         document.getElementById("grid_two").style.display = "flex";
         document.getElementById("grid_one").style.display = "none";
         var resultOne = list[Math.floor(Math.random() * 10)];
@@ -220,7 +220,7 @@
 
 // Mixed 'dialogue' quote fucntion (2 random characters to 2 random quotes)
 
-  function combineMix() {
+        function combineMix() {
         document.getElementById("grid_two").style.display = "flex";
         document.getElementById("grid_one").style.display = "none";
         var resultOne = list[Math.floor(Math.random() * 10)];
@@ -298,7 +298,7 @@
 
     <div id="grid_two">
       <div id= "stereo_1">
-        <div>
+        <div id="character_1">
           <img src="" id="image_1" alt="">
         </div>
         <div id="torn_sheet_1">
@@ -308,7 +308,7 @@
         </div>
       </div>
       <div id= "stereo_2">
-        <div>
+        <div id="character_2">
           <img src="" id="image_2" alt="">
         </div>
         <div id="torn_sheet_2">
