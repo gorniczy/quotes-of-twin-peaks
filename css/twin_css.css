@@ -1,6 +1,6 @@
-/* {
+* {
     outline: 1px solid red;
-}*/
+}
 
 /* page */
 
@@ -14,6 +14,12 @@ body {
   background-repeat: no-repeat;
   background-size: 50%, 50%, 100%;
   background-position: left top, right bottom;
+}
+
+#first_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #second_page {
@@ -122,6 +128,11 @@ body {
   width: 24%;
   padding-left: 12%;
   padding-right: 12%;
+}
+
+#coffee_1:active {
+  margin-top: 1%;
+  margin-left: 1%;
 }
 
 #coffee_2, #pie_2 {
