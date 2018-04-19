@@ -228,12 +228,3 @@ bottom: 0px;
   flex-basis: 100px;
   max-height: 100px;
 }
-<<<<<<< HEAD
-
-@media only screen and (max-width: 700px) {
-  body {
-    background-size: 70%, 70%, 1000px;
-  }
-}
-=======
->>>>>>> parent of 617ede9... experiment w/ svg
