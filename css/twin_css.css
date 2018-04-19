@@ -261,7 +261,7 @@ bottom: 0px;
   max-height: 100px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   body {
     background-size: 70%, 70%, 1000px;
   }
@@ -278,8 +278,23 @@ bottom: 0px;
     width: 90%;
   }
 
-  #buttons1 p {
+}
 
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  body {
+    background-size: 60%, 60%, 100%;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  #buttons1 div {
+    margin: 0 8%;
+  }
+
+  #buttons1 img {
+    width: 90%;
   }
 
 }
