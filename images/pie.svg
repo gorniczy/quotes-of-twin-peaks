@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="91px" viewBox="0 0 91 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>pie</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-5.7%" y="-5.7%" width="116.1%" height="116.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-2" cx="43" cy="44" r="39"></circle>
+        <filter x="-0.1%" y="-0.1%" width="100.3%" height="100.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-4" cx="43" cy="44" r="35"></circle>
+        <filter x="-0.1%" y="-0.1%" width="100.3%" height="100.3%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="0.1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-6" x="24.1752813" y="23.8123754" width="68.2347118" height="8.9605236" rx="4.4802618"></rect>
+        <rect id="path-7" x="-5.70012465" y="54.6322528" width="67.3839305" height="8.9605236" rx="4.4802618"></rect>
+        <rect id="path-8" x="-6.20024851" y="23.436499" width="68.2340187" height="8.9605236" rx="4.4802618"></rect>
+        <rect id="path-9" x="23.1368225" y="53.7073325" width="70" height="8.9605236" rx="4.4802618"></rect>
+        <rect id="path-10" x="3.74518797" y="39.2649262" width="78" height="8.9605236" rx="4.4802618"></rect>
+        <rect id="path-11" x="3.74518797" y="39.2649262" width="78" height="8.9605236" rx="4.4802618"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Twin-Peaks-Quote-Machine-I" transform="translate(-753.000000, -463.000000)">
+            <g id="pie" filter="url(#filter-1)" transform="translate(753.000000, 463.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use stroke="#0E0E0E" stroke-width="0.2" fill="#FFCC8C" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    <use stroke="#000000" stroke-width="0.2" fill="#AB5453" fill-rule="evenodd" xlink:href="#path-4"></use>
+                </g>
+                <g id="Rectangle-3" transform="translate(58.292637, 28.292637) rotate(-315.000000) translate(-58.292637, -28.292637) ">
+                    <use fill="#FFCC8C" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    <rect stroke="#000000" stroke-width="0.2" x="24.2752813" y="23.9123754" width="68.0347118" height="8.7605236" rx="4.3802618"></rect>
+                </g>
+                <g id="Rectangle-3" transform="translate(27.991841, 59.112515) rotate(-315.000000) translate(-27.991841, -59.112515) ">
+                    <use fill="#FFCC8C" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    <rect stroke="#000000" stroke-width="0.2" x="-5.60012465" y="54.7322528" width="67.1839305" height="8.7605236" rx="4.3802618"></rect>
+                </g>
+                <g id="Rectangle-3" transform="translate(27.916761, 27.916761) rotate(-225.000000) translate(-27.916761, -27.916761) ">
+                    <use fill="#FFCC8C" fill-rule="evenodd" xlink:href="#path-8"></use>
+                    <rect stroke="#000000" stroke-width="0.2" x="-6.10024851" y="23.536499" width="68.0340187" height="8.7605236" rx="4.3802618"></rect>
+                </g>
+                <g id="Rectangle-3" transform="translate(58.136822, 58.187594) rotate(-225.000000) translate(-58.136822, -58.187594) ">
+                    <use fill="#FFCC8C" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    <rect stroke="#000000" stroke-width="0.2" x="23.2368225" y="53.8073325" width="69.8" height="8.7605236" rx="4.3802618"></rect>
+                </g>
+                <g id="Rectangle-3" transform="translate(42.745188, 43.745188) rotate(-225.000000) translate(-42.745188, -43.745188) ">
+                    <use fill="#FFCC8C" fill-rule="evenodd" xlink:href="#path-10"></use>
+                    <rect stroke="#000000" stroke-width="0.2" x="3.84518797" y="39.3649262" width="77.8" height="8.7605236" rx="4.3802618"></rect>
+                </g>
+                <g id="Rectangle-3" transform="translate(42.745188, 43.745188) rotate(-315.000000) translate(-42.745188, -43.745188) ">
+                    <use fill="#FFCC8C" fill-rule="evenodd" xlink:href="#path-11"></use>
+                    <rect stroke="#000000" stroke-width="0.2" x="3.84518797" y="39.3649262" width="77.8" height="8.7605236" rx="4.3802618"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

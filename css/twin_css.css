@@ -1,6 +1,6 @@
-* {
+/* {
     outline: 1px solid red;
-}
+}*/
 
 /* page */
 
@@ -66,7 +66,9 @@ body {
   font-size: 18px;
   color: #241F19;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.50);
-  margin: 10%;
+  margin-top: 25%;
+  margin-bottom: 0;
+  margin-right: 5%;
 }
 
 
@@ -84,14 +86,6 @@ body {
 
 /* buttons */
 
-#switch1 {
-  position: fixed;
-  width: 6%;
-  min-width: 80px;
-  top: 2%;
-  right: 2%;
-
-}
 
 #switch2 {
   display: inline-block;
@@ -101,10 +95,30 @@ body {
   margin-top: 1%;
 }
 
-#switch1 img {
-  display: block;
-  width: 100%;
-  padding: 10% 0%;
+#mono_button1 {
+  position: fixed;
+  width: 6%;
+  min-width: 79px;
+  top: 3%;
+  right: 2%;
+}
+
+#stereo_button1 {
+  position: fixed;
+  width: 6%;
+  min-width: 79px;
+  top: 8%;
+  right: 2%;
+}
+
+#mono_button1:active {
+  top: 3.1%;
+  right: 1.9%;
+}
+
+#stereo_button1:active {
+  top: 8.1%;
+  right: 1.9%;
 }
 
 #switch2 img {
@@ -137,8 +151,8 @@ body {
 
 #buttons1 img:active {
   position: relative;
-  top: 3%;
-  left: 3%;
+  top: 2%;
+  left: 2%;
 }
 
 #buttons2 img {
@@ -251,4 +265,21 @@ bottom: 0px;
   body {
     background-size: 70%, 70%, 1000px;
   }
+
+  .title {
+    font-size: 28px;
+  }
+
+  #buttons1 div {
+    margin: 0 8%;
+  }
+
+  #buttons1 img {
+    width: 90%;
+  }
+
+  #buttons1 p {
+
+  }
+
 }
