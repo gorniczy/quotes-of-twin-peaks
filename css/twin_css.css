@@ -1,4 +1,4 @@
-/* {
+* {
     outline: 1px solid red;
 }*/
 
@@ -61,6 +61,18 @@ body {
   max-width: 50%;
 }
 
+#buttons1 p {
+  font-family: AmericanTypewriter;
+  font-size: 18px;
+  color: #3A3836;
+  margin: 10%;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.50);
+}
+
+#buttons1 img {
+
+}
+
 .logo {
   max-width: 20%;
   min-width: 225px;
@@ -119,7 +131,11 @@ body {
   margin-top: 1%;
 }
 
-#buttons1 img {
+#buttons1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 5%;
 }
 
@@ -227,4 +243,10 @@ bottom: 0px;
   display: block;
   flex-basis: 100px;
   max-height: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    background-size: 80%, 80%, 1000px;
+  }
 }
