@@ -66,7 +66,9 @@ body {
   font-size: 18px;
   color: #241F19;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.50);
+  margin: 10%;
 }
+
 
 .logo {
   max-width: 20%;
@@ -114,7 +116,6 @@ body {
 #buttons1 {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
@@ -127,7 +128,17 @@ body {
 }
 
 #buttons1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 5%;
+}
+
+#buttons1 img:active {
+  position: relative;
+  top: 3%;
+  left: 3%;
 }
 
 #buttons2 img {
