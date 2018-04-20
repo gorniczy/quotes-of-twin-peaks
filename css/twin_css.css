@@ -165,7 +165,7 @@ body {
   display: none;
   width: 90%;
   height: 90vh;
-  position: fixed;
+  position: absolute;
   top: 10%;
   z-index: -1;
   grid-template-columns: 4fr 3fr;
@@ -182,19 +182,18 @@ body {
 
 #grid_two {
   display: none;
-  width: 90%;
+  width: 90vw;
   height: 90vh;
-  position: fixed;
+  position: absolute;
   top: 5%;
   z-index: -1;
 }
 
 #stereo_1, #stereo_2 {
-  width: 49%;
-  height: 70%;
+  width: 45vw;
+  height: 65vh;
   display: inline-grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-  justify-items: center;
 }
 
 #stereo_1 {
@@ -227,18 +226,19 @@ bottom: 0px;
 
 #image {
   display: block;
-  margin: auto;
-  height: 700px;
+  margin: 0 auto;
+  max-height: 90vh;
 }
 
 #sheet {
-  width: 100%;
+  width: 35vw;
   position: absolute;
 }
 
 #image_1, #image_2 {
   display: block;
-  height: 100%;
+  height: 65vh;
+  margin: 0 auto;
 }
 
 #character_1 {
@@ -251,8 +251,7 @@ bottom: 0px;
 
 #sheet_1, #sheet_2 {
   display: block;
-  flex-basis: 100px;
-  max-height: 100px;
+  width: 30vw;
 }
 
 @media only screen and (max-width: 768px) {
