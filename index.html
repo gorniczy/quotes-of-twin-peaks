@@ -120,10 +120,8 @@
 // Functions to choose between 'monologue' and 'dialogue' quoting
 
   function switchMono()  {
-    document.getElementById("mono_button1").src = "images/mono active button.png";
-    document.getElementById("stereo_button1").src = "images/stereo inactive button.png";
-    document.getElementById("mono_button2").src = "images/mono active button.png";
-    document.getElementById("stereo_button2").src = "images/stereo inactive button.png";
+    document.getElementById("mono_button").src = "images/mono active button.png";
+    document.getElementById("stereo_button").src = "images/stereo inactive button.png";
     document.getElementById("coffee_1").style.display = "inline";
     document.getElementById("pie_1").style.display = "inline";
     document.getElementById("coffee_2").style.display = "none";
@@ -135,10 +133,8 @@
   }
 
   function switchStereo()  {
-    document.getElementById("mono_button1").src = "images/mono inactive button.png";
-    document.getElementById("stereo_button1").src = "images/stereo active button.png";
-    document.getElementById("mono_button2").src = "images/mono inactive button.png";
-    document.getElementById("stereo_button2").src = "images/stereo active button.png";
+    document.getElementById("mono_button").src = "images/mono inactive button.png";
+    document.getElementById("stereo_button").src = "images/stereo active button.png";
     document.getElementById("coffee_2").style.display = "inline";
     document.getElementById("pie_2").style.display = "inline";
     document.getElementById("coffee_1").style.display = "none";
@@ -251,8 +247,8 @@
 <!-- Title page -->
 
     <div id="switch">
-      <img src="images/mono active button.png" id="mono_button1" alt="mono button" onclick="switchMono()">
-      <img src="images/stereo inactive button.png" id="stereo_button1" alt="stereo button" onclick="switchStereo()">
+      <img src="images/mono active button.png" id="mono_button" alt="mono button" onclick="switchMono()">
+      <img src="images/stereo inactive button.png" id="stereo_button" alt="stereo button" onclick="switchStereo()">
     </div>
     <div id="first_page">
       <img src="images/logo.png" alt="logo" class="logo">

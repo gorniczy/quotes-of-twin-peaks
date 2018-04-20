@@ -1,6 +1,6 @@
-/* {
+* {
     outline: 1px solid red;
-}*/
+}
 
 /* page */
 
@@ -26,8 +26,6 @@ body {
 
 #second_page {
   display: none;
-  width: 100%;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 /* text */
@@ -78,24 +76,16 @@ body {
 }
 
 .logo2 {
+  position: absolute;
   width: 8%;
+  min-width: 80px;
   margin-top: 1.5%;
   margin-left: 1.5%;
-  vertical-align: middle;
 }
 
 /* buttons */
 
-
-#switch2 {
-  display: inline-block;
-  vertical-align: top;
-  width: 6%;
-  margin-left: 1%;
-  margin-top: 1%;
-}
-
-#mono_button1 {
+#mono_button {
   position: fixed;
   width: 6%;
   min-width: 79px;
@@ -103,7 +93,7 @@ body {
   right: 2%;
 }
 
-#stereo_button1 {
+#stereo_button {
   position: fixed;
   width: 6%;
   min-width: 79px;
@@ -111,34 +101,20 @@ body {
   right: 2%;
 }
 
-#mono_button1:active {
+#mono_button:active {
   top: 3.1%;
   right: 1.9%;
 }
 
-#stereo_button1:active {
+#stereo_button:active {
   top: 8.1%;
   right: 1.9%;
-}
-
-#switch2 img {
-  display: block;
-  width: 100%;
-  padding: 10% 0%;
 }
 
 #buttons1 {
   display: flex;
   justify-content: center;
   width: 100%;
-}
-
-#buttons2 {
-  display: inline-block;
-  width: 20%;
-  vertical-align: top;
-  margin-left: 61%;
-  margin-top: 1%;
 }
 
 #buttons1 div {
@@ -155,10 +131,30 @@ body {
   left: 2%;
 }
 
-#buttons2 img {
-  width: 24%;
-  padding-left: 12%;
-  padding-right: 12%;
+#coffee_3, #coffee_4 {
+  position: fixed;
+  top: 3%;
+  left: 75%;
+  width: 5%;
+  min-width: 60px;
+}
+
+#pie_3, #pie_4 {
+  position: fixed;
+  top: 3%;
+  left: 83%;
+  width: 5%;
+  min-width: 60px;
+}
+
+#coffee_3:active, #coffee_4:active {
+  top: 3.2%;
+  left: 78.1%;
+}
+
+#pie_3:active, #pie_4:active {
+  top: 3.2%;
+  right: 85.1%;
 }
 
 #coffee_2, #pie_2 {
