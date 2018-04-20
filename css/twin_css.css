@@ -69,36 +69,31 @@ body {
   margin-right: 0.5vw;
 }
 
-
 .logo {
-  max-width: 20%;
-  min-width: 225px;
+  max-width: 20vw;
 }
 
 .logo2 {
   position: absolute;
-  width: 8%;
-  min-width: 80px;
-  margin-top: 1.5%;
-  margin-left: 1.5%;
+  width: 8vw;
+  margin-top: 2vh;
+  margin-left: 1vw;
 }
 
 /* buttons */
 
 #mono_button {
   position: fixed;
-  width: 6%;
-  min-width: 79px;
-  top: 3%;
-  right: 2%;
+  width: 5.5rem;
+  top: 3vh;
+  right: 2vw;
 }
 
 #stereo_button {
   position: fixed;
-  width: 6%;
-  min-width: 79px;
-  top: 8%;
-  right: 2%;
+  width: 5.5rem;
+  top: 8vh;
+  right: 2vw;
 }
 
 #mono_button:active {
