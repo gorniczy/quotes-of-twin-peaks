@@ -1,6 +1,6 @@
-* {
+/* {
     outline: 1px solid red;
-}
+}*/
 
 /* page */
 
@@ -75,9 +75,9 @@ body {
 
 .logo2 {
   position: absolute;
-  width: 8vw;
-  margin-top: 2vh;
-  margin-left: 1vw;
+  width: 7rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
 }
 
 /* buttons */
@@ -128,26 +128,26 @@ body {
 
 #coffee_3, #coffee_4 {
   position: fixed;
-  top: 3%;
-  left: 75%;
-  width: 5%;
+  top: 2rem;
+  right: 14rem;
+  width: 4.5rem;
 }
 
 #pie_3, #pie_4 {
   position: fixed;
-  top: 3%;
-  left: 83%;
-  width: 5%;
+  top: 2rem;
+  right: 8.5rem;
+  width: 4.5rem;
 }
 
 #coffee_3:active, #coffee_4:active {
-  top: 3.2%;
-  left: 75.1%;
+  top: 2.1rem;
+  right: 13.9rem;
 }
 
 #pie_3:active, #pie_4:active {
-  top: 3.2%;
-  left: 83.1%;
+  top: 2.1rem;
+  right: 8.4rem;
 }
 
 #coffee_2, #pie_2 {
@@ -286,26 +286,24 @@ bottom: 0px;
 
   #coffee_3, #coffee_4 {
     position: fixed;
-    top: 3%;
-    left: 70%;
-    width: 8%;
+    top: 7rem;
+    right: 2rem;
   }
 
   #pie_3, #pie_4 {
     position: fixed;
-    top: 3%;
-    left: 79%;
-    width: 8%;
+    top: 12rem;
+    right: 2rem;
   }
 
   #coffee_3:active, #coffee_4:active {
-    top: 3.2%;
-    left: 70.1%;
+    top: 7.1rem;
+    right: 1.9rem;
   }
 
   #pie_3:active, #pie_4:active {
-    top: 3.2%;
-    left: 79.1%;
+    top: 12.1rem;
+    right: 1.9rem;
   }
 
   #stereo_1, #stereo_2 {
@@ -315,17 +313,8 @@ bottom: 0px;
   }
 
   #image_1, #image_2 {
-    position: absolute;
     max-height: 60vh;
     z-index: -1;
-  }
-
-  #image_1 {
-    right: 0;
-  }
-
-  #image_2 {
-    left: 0;
   }
 
   #sheet_1, #sheet_2 {
