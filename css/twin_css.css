@@ -85,25 +85,25 @@ body {
 #mono_button {
   position: fixed;
   width: 5.5rem;
-  top: 3vh;
-  right: 2vw;
+  top: 2rem;
+  right: 2rem;
 }
 
 #stereo_button {
   position: fixed;
   width: 5.5rem;
-  top: 8vh;
-  right: 2vw;
+  top: 4.5rem;
+  right: 2rem;
 }
 
 #mono_button:active {
-  top: 3.1%;
-  right: 1.9%;
+  top: 2.1rem;
+  right: 1.9rem;
 }
 
 #stereo_button:active {
-  top: 8.1%;
-  right: 1.9%;
+  top: 4.6rem;
+  right: 1.9rem;
 }
 
 #buttons1 {
@@ -358,4 +358,10 @@ bottom: 0px;
     grid-area: 1/1/span 3/ span 2;
   }
 
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) and (max-height: 500px) {
+  body {
+    background-size: 50%, 50%, 100%;
+  }
 }
