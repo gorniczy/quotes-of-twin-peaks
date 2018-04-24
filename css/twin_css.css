@@ -1,6 +1,6 @@
-/* {
+* {
     outline: 1px solid red;
-}*/
+}
 
 /* page */
 
@@ -12,7 +12,7 @@ body {
   min-height: 100%;
   background-image: url("../images/triangle1.png"),   url("../images/triangle2.png"), url("../images/paper.jpg");
   background-repeat: no-repeat;
-  background-size: 50%, 50%, 100%;
+  background-size: 45rem, 45rem, 100%;
   background-position: left top, right bottom;
 }
 
@@ -156,11 +156,19 @@ body {
   display: none;
 }
 
-/* grids/flexboxes */
+/* containers/grids/flexboxes */
 
 #grid_one {
   display: none;
   z-index: -1;
+}
+
+#mono_image {
+  position: absolute;
+  width: 40vw;
+  height: 90vh;
+  top: 5vh;
+  right: 50vw;
 }
 
 #mono_quote {
@@ -216,8 +224,8 @@ bottom: 0px;
 #image {
   position: absolute;
   top: 50%;
-  left: 10%;
-  transform: translateY(-45%);
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   max-height: 50vw;
 }
 
