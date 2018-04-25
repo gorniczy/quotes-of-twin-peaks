@@ -193,7 +193,7 @@ body {
 #mono_quote {
   position: absolute;
   top: 30vh;
-  left: 50vw;
+  left: 52vw;
 }
 
 #grid_two {
@@ -249,7 +249,7 @@ bottom: 0px;
 }
 
 #sheet {
-  width: 33rem;
+  width: 30.5rem;
   display: block;
 }
 
@@ -277,7 +277,7 @@ bottom: 0px;
 
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 768px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
   body {
     background-size: 60%, 60%, 100%;
   }
@@ -323,10 +323,9 @@ bottom: 0px;
   }
 
   #mono_image {
-    top: auto;
+    top: 50%;
     left: 50%;
-    bottom: 10vh;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
   }
 
   #mono_quote {
@@ -375,7 +374,7 @@ bottom: 0px;
 
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 768px) and (max-height: 500px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) and (max-height: 500px) {
   body {
     background-size: 50%, 50%, 100%;
   }
