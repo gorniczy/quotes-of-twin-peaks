@@ -184,16 +184,16 @@ body {
 
 #mono_image {
   position: absolute;
-  width: 35rem;
+  width: 38rem;
   height: 90vh;
   top: 5vh;
-  left: 5vw;
+  right: 45vw;
 }
 
 #mono_quote {
   position: absolute;
   top: 30vh;
-  left: 52vw;
+  left: 53vw;
 }
 
 #grid_two {
@@ -245,11 +245,13 @@ bottom: 0px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  max-height: 40rem;
+  height: 50vw;
+  min-height: 38rem;
 }
 
 #sheet {
-  width: 30.5rem;
+  width: 36vw;
+  min-width: 28rem;
   display: block;
 }
 
@@ -378,11 +380,4 @@ bottom: 0px;
   body {
     background-size: 50%, 50%, 100%;
   }
-}
-
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-
 }
