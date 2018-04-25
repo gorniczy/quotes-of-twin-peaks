@@ -274,6 +274,10 @@ bottom: 0px;
   width: 30vw;
 }
 
+@media only screen and (orientation: landscape) {
+
+}
+
 @media only screen and (max-width: 768px) {
 
 
@@ -325,16 +329,23 @@ bottom: 0px;
   }
 
   #mono_image {
-    top: 50%;
+    height: 80vh;
+    width: 33rem;
+    top: 5%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%);
   }
 
   #mono_quote {
    top: auto;
    left: 50%;
-   bottom: 7vh;
+   bottom: 10vh;
    transform: translateX(-50%);
+ }
+
+ #sheet {
+   width: 50vw;
+   min-width: 31rem;
  }
 
   #image_1, #image_2 {
