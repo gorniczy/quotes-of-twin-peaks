@@ -1,6 +1,6 @@
-* {
+/* {
     outline: 1px solid red;
-}
+}*/
 
 /* page */
 
@@ -12,7 +12,7 @@ body {
   min-height: 100%;
   background-image: url("../images/triangle1.png"),   url("../images/triangle2.png"), url("../images/paper.jpg");
   background-repeat: no-repeat;
-  background-size: 45rem, 45rem, 100%;
+  background-size: 50%, 50%, 100%;
   background-position: left top, right bottom;
 }
 
@@ -78,8 +78,8 @@ body {
 .logo2 {
   position: absolute;
   width: 7rem;
-  margin-top: 2rem;
-  margin-left: 1rem;
+  top: 2rem;
+  left: 1rem;
 }
 
 /* buttons */
@@ -154,6 +154,25 @@ body {
 
 #coffee_2, #pie_2 {
   display: none;
+}
+
+#social {
+  display: none;
+}
+
+#facebook, #twitter {
+  position: fixed;
+  width: 2rem;
+}
+
+#facebook {
+  right: 5.5rem;
+  bottom: 3rem;
+}
+
+#twitter {
+  right: 2rem;
+  bottom: 3rem;
 }
 
 /* containers/grids/flexboxes */

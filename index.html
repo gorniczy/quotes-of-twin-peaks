@@ -154,6 +154,7 @@
       document.getElementById("grid_two").style.display = "none";
       document.getElementById("coffee_4").style.display = "none";
       document.getElementById("pie_4").style.display = "none";
+      document.getElementById("social").style.display = "inline";
       var result = list[Math.floor(Math.random() * 10)];
       var quoted = quoteImage[result].quote[Math.floor(Math.random() * quoteImage[result].quote.length)];
        document.getElementById("image").src = quoteImage[result].image[0];
@@ -176,6 +177,7 @@
         document.getElementById("grid_two").style.display = "none";
         document.getElementById("coffee_4").style.display = "none";
         document.getElementById("pie_4").style.display = "none";
+        document.getElementById("social").style.display = "inline";
         var result = list[Math.floor(Math.random() * 10)];
           document.getElementById("image").src = quoteImage[result].image[0];
           document.getElementById("image").alt = "image of " + result;
@@ -197,6 +199,7 @@
         function combine() {
         document.getElementById("grid_two").style.display = "inline-block";
         document.getElementById("grid_one").style.display = "none";
+        document.getElementById("social").style.display = "inline";
         var resultOne = list[Math.floor(Math.random() * 10)];
         var resultTwo = list[Math.floor(Math.random() * 10)];
         if (resultOne != resultTwo) {
@@ -219,6 +222,7 @@
         function combineMix() {
         document.getElementById("grid_two").style.display = "inline-block";
         document.getElementById("grid_one").style.display = "none";
+        document.getElementById("social").style.display = "inline";
         var resultOne = list[Math.floor(Math.random() * 10)];
         var mixMeOne = list[Math.floor(Math.random() * 10)];
         var resultTwo = list[Math.floor(Math.random() * 10)];
@@ -316,6 +320,13 @@
         </div>
       </div>
     </div>
+
+<!-- Social media -->
+
+  <div id="social">
+    <img src="images/facebook button.png" id="facebook" alt="facebook button">
+    <img src="images/twitter button.png" id="twitter" alt="twitter button">
+  </div>
 
 <!---------------------------------------------->
 
