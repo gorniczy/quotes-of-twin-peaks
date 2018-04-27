@@ -1,6 +1,6 @@
-/* {
+* {
     outline: 1px solid red;
-}*/
+}
 
 /* page */
 
@@ -184,7 +184,7 @@ body {
 
 #mono_image {
   position: absolute;
-  width: 38rem;
+  width: 50vw;
   height: 90vh;
   top: 5vh;
   right: 45vw;
@@ -274,10 +274,6 @@ bottom: 0px;
   width: 30vw;
 }
 
-@media only screen and (orientation: landscape) {
-
-}
-
 @media only screen and (max-width: 768px) {
 
 
@@ -288,9 +284,13 @@ bottom: 0px;
     background-size: 60%, 60%, 100%;
   }
 
+  /* text */
+
   .title {
     font-size: 32px;
   }
+
+  /*buttons*/
 
   #buttons1 div {
     margin: 0 8%;
@@ -322,37 +322,63 @@ bottom: 0px;
     right: 1.9rem;
   }
 
+  /*mono mode*/
+
+  #grid_one {
+    position: absolute;
+    width: 70vw;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  #mono_image {
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    top: 50%;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+  }
+
+  #mono_quote {
+    position: absolute;
+    top: initial;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(+50%);
+  }
+
+  #image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 70vh;
+    min-height: auto;
+  }
+
+  #sheet {
+   width: 50vw;
+   min-width: 31rem;
+   display: block;
+  }
+
+  /*stereo mode*/
+
   #stereo_1, #stereo_2 {
     width: 45vw;
     height: 60vh;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
   }
 
-  #mono_image {
-    height: 80vh;
-    width: 33rem;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  #mono_quote {
-   top: auto;
-   left: 50%;
-   bottom: 10vh;
-   transform: translateX(-50%);
- }
-
- #sheet {
-   width: 50vw;
-   min-width: 31rem;
- }
-
   #image_1, #image_2 {
     max-height: 60vh;
     z-index: -1;
   }
-
 
   #sheet_1, #sheet_2 {
     width: 35vw;
@@ -365,7 +391,6 @@ bottom: 0px;
   #torn_sheet_2 {
     grid-area: 3/1/spna 1/span 2;
   }
-
 
   #quote_1, #quote_2 {
     font-family: AmericanTypewriter-Semibold;
