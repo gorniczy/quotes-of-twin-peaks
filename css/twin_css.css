@@ -274,14 +274,16 @@ bottom: 0px;
   width: 30vw;
 }
 
-@media only screen and (max-width: 768px) {
 
+/*
 
-}
+    TABLET
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {
+*/
+
+@media only screen and (max-width: 1023px) {
   body {
-    background-size: 65%, 65%, 100%;
+    background-size: 65%, 65%, 100rem;
   }
 
   /* text */
@@ -290,7 +292,7 @@ bottom: 0px;
     font-size: 32px;
   }
 
-  /*buttons*/
+  /* buttons */
 
   #buttons1 div {
     margin: 0 8%;
@@ -322,7 +324,7 @@ bottom: 0px;
     right: 1.9rem;
   }
 
-  /*mono mode*/
+  /* mono mode */
 
   #grid_one {
     position: absolute;
@@ -367,7 +369,7 @@ bottom: 0px;
    display: block;
   }
 
-  /*stereo mode*/
+  /* stereo mode */
 
   #stereo_1, #stereo_2 {
     width: 45vw;
@@ -410,10 +412,4 @@ bottom: 0px;
     grid-area: 1/1/span 3/ span 2;
   }
 
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 768px) and (max-height: 500px) {
-  body {
-    background-size: 50%, 50%, 100%;
-  }
 }
