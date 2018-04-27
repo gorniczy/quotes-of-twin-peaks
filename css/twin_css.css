@@ -281,7 +281,7 @@ bottom: 0px;
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {
   body {
-    background-size: 80%, 80%, 100%;
+    background-size: 65%, 65%, 100%;
   }
 
   /* text */
@@ -363,7 +363,7 @@ bottom: 0px;
 
   #sheet {
    width: 50vw;
-   min-width: 37rem;
+   min-width: 35rem;
    display: block;
   }
 
