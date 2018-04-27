@@ -328,7 +328,7 @@ bottom: 0px;
     position: absolute;
     width: 70vw;
     height: 70vh;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
@@ -363,7 +363,7 @@ bottom: 0px;
 
   #sheet {
    width: 50vw;
-   min-width: 31rem;
+   min-width: 35rem;
    display: block;
   }
 
