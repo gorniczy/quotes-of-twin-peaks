@@ -288,14 +288,16 @@ bottom: 0px;
     background-image: url("../images/rectangle1.png"),   url("../images/rectangle2.png"), url("../images/paper.jpg");
     background-repeat: no-repeat;
     background-size: auto, auto, auto 150%;
-    background-position: 0 -3%, 0 103%;
+    background-position: top, bottom;
   }
 
   .wrapper {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   /* text */
@@ -320,10 +322,10 @@ bottom: 0px;
 
   .logo2 {
     position: absolute;
-    width: 20vw;
+    width: 23vw;
     max-width: 5.5rem;
     min-width: 5rem;
-    top: 2rem;
+    top: 1rem;
     left: 3vw;
   }
 
@@ -334,7 +336,7 @@ bottom: 0px;
     max-width: 5.5rem;
     min-width: 4.5rem;
     width: 20vw;
-    top: 2rem;
+    top: 1rem;
     right: 1rem;
   }
 
@@ -343,17 +345,17 @@ bottom: 0px;
     max-width: 5.5rem;
     min-width: 4.5rem;
     width: 20vw;
-    top: 4rem;
+    top: 3.5rem;
     right: 1rem;
   }
 
   #mono_button:active {
-    top: 2.1rem;
+    top: 1.1rem;
     right: 0.9rem;
   }
 
   #stereo_button:active {
-    top: 4.6rem;
+    top: 3.6rem;
     right: 0.9rem;
   }
 
@@ -375,7 +377,7 @@ bottom: 0px;
 
   #coffee_3, #coffee_4 {
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: auto;
     left: 50%;
     transform: translateX(-105%);
@@ -386,7 +388,7 @@ bottom: 0px;
 
   #pie_3, #pie_4 {
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 50%;
     transform: translateX(+105%);
     max-width: 4.5rem;
@@ -395,14 +397,29 @@ bottom: 0px;
   }
 
   #coffee_3:active, #coffee_4:active {
-    top: 2.1rem;
+    top: 1.1rem;
     right: none;
     left: 51%;
   }
 
   #pie_3:active, #pie_4:active {
-    top: 2.1rem;
+    top: 1.1rem;
     right: 49%;
+  }
+
+  #facebook, #twitter {
+    position: fixed;
+    width: 2rem;
+  }
+
+  #facebook {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  #twitter {
+    left: 4rem;
+    bottom: 1rem;
   }
 
   /* mono mode */
@@ -419,7 +436,7 @@ bottom: 0px;
   #mono_image {
     position: absolute;
     width: 100vw;
-    height: 100vw;
+    height: 90vw;
     top: 50%;
     right: auto;
     left: 50%;
@@ -432,7 +449,7 @@ bottom: 0px;
     top: initial;
     left: 50%;
     bottom: 0;
-    transform: translateX(-50%) translateY(+60%);
+    transform: translateX(-50%) translateY(+50%);
   }
 
   #image {
@@ -440,7 +457,7 @@ bottom: 0px;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    height: 100vw;
+    height: 90vw;
     min-height: auto;
   }
 
