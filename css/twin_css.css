@@ -1,6 +1,6 @@
-/* {
+* {
     outline: 1px solid red;
-}*/
+}
 
 /* page */
 
@@ -283,10 +283,10 @@ bottom: 0px;
 @media only screen and (max-width: 500px) {
   body {
     min-height: 100%;
-    background-image: url("../images/triangle1.png"),   url("../images/triangle2.png"), url("../images/paper.jpg");
+    background-image: url("../images/rectangle1.png"),   url("../images/rectangle2.png"), url("../images/paper.jpg");
     background-repeat: no-repeat;
-    background-size: 80%, 80%, auto 150%;
-    background-position: left top, right bottom;
+    background-size: auto, auto, auto 150%;
+    background-position: 0 -3%, 0 103%;
   }
 
   /* text */
@@ -311,13 +311,42 @@ bottom: 0px;
 
   .logo2 {
     position: absolute;
-    width: 15vw;
-    min-width: 5.5rem;
+    width: 20vw;
+    max-width: 5.5rem;
+    min-width: 5rem;
     top: 2rem;
-    left: 1rem;
+    left: 3vw;
   }
 
   /* buttons */
+
+  #mono_button {
+    position: fixed;
+    max-width: 5.5rem;
+    min-width: 4.5rem;
+    width: 20vw;
+    top: 2rem;
+    right: 1rem;
+  }
+
+  #stereo_button {
+    position: fixed;
+    max-width: 5.5rem;
+    min-width: 4.5rem;
+    width: 20vw;
+    top: 4rem;
+    right: 1rem;
+  }
+
+  #mono_button:active {
+    top: 2.1rem;
+    right: 0.9rem;
+  }
+
+  #stereo_button:active {
+    top: 4.6rem;
+    right: 0.9rem;
+  }
 
   #buttons1 div {
     margin: 0 8%;
@@ -327,28 +356,44 @@ bottom: 0px;
     width: 90%;
   }
 
+  #buttons2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
   #coffee_3, #coffee_4 {
-    position: fixed;
+    position: absolute;
     top: 2rem;
     right: auto;
-    left: 40%;
+    left: 50%;
+    transform: translateX(-105%);
+    max-width: 4.5rem;
+    min-width: 4rem;
+    width: 18vw;
   }
 
   #pie_3, #pie_4 {
-    position: fixed;
+    position: absolute;
     top: 2rem;
-    right: auto;
-    left: 60%;
+    right: 50%;
+    transform: translateX(+105%);
+    max-width: 4.5rem;
+    min-width: 4rem;
+    width: 18vw;
   }
 
   #coffee_3:active, #coffee_4:active {
-    top: 7.1rem;
-    right: 1.9rem;
+    top: 2.1rem;
+    right: none;
+    left: 51%;
   }
 
   #pie_3:active, #pie_4:active {
-    top: 12.1rem;
-    right: 1.9rem;
+    top: 2.1rem;
+    right: 49%;
   }
 
   /* mono mode */
