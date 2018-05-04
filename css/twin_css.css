@@ -428,7 +428,7 @@ bottom: 0px;
     position: absolute;
     width: 100vw;
     height: 100vw;
-    top: 47%;
+    top: 43%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
@@ -462,7 +462,7 @@ bottom: 0px;
   }
 
   #sheet {
-   width: 140vw;
+   width: 130vw;
    min-width: auto;
    display: block;
   }
