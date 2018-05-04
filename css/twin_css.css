@@ -287,8 +287,14 @@ bottom: 0px;
     min-height: 100%;
     background-image: url("../images/rectangle1.png"),   url("../images/rectangle2.png"), url("../images/paper.jpg");
     background-repeat: no-repeat;
-    background-size: auto, auto, auto 100vh;
+    background-size: auto, auto, auto 150%;
     background-position: 0 -3%, 0 103%;
+  }
+
+  .wrapper {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
   }
 
   /* text */
