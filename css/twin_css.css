@@ -4,6 +4,11 @@
 
 /* page */
 
+@font-face {
+    font-family: AmericanTypewriter;
+    src: url("../fonts/American Typewriter Regular.ttf")
+}
+
 html {
   min-height: 100%;
   overflow: hidden;
@@ -42,7 +47,7 @@ body {
 }
 
 #quote {
-  font-family: AmericanTypewriter-Semibold;
+  font-family: AmericanTypewriter;
   font-size: 20px;
   color: #3A3836;
   position: absolute;
@@ -54,7 +59,7 @@ body {
 }
 
 #quote_1, #quote_2 {
-  font-family: AmericanTypewriter-Semibold;
+  font-family: AmericanTypewriter;
   font-size: 16px;
   color: #3A3836;
   position: absolute;
@@ -307,7 +312,7 @@ bottom: 0px;
   }
 
   #quote {
-    font-family: AmericanTypewriter-Semibold;
+    font-family: AmericanTypewriter;
     font-size: 18px;
     color: #3A3836;
     position: absolute;
@@ -699,7 +704,7 @@ bottom: 0px;
   }
 
   #quote_1, #quote_2 {
-    font-family: AmericanTypewriter-Semibold;
+    font-family: AmericanTypewriter;
     font-size: 14px;
     color: #3A3836;
     position: absolute;
