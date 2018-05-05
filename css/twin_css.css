@@ -413,12 +413,12 @@ bottom: 0px;
   }
 
   #facebook {
-    left: 1rem;
+    right: 4rem;
     bottom: 1rem;
   }
 
   #twitter {
-    left: 4rem;
+    right: 1rem;
     bottom: 1rem;
   }
 
@@ -462,7 +462,7 @@ bottom: 0px;
   }
 
   #sheet {
-   width: 130vw;
+   width: 120vw;
    min-width: auto;
    display: block;
   }
