@@ -310,7 +310,7 @@ bottom: 0px;
 
 /*
 
----------------->    MOBILE I  <----------------
+---------------->    MOBILE I - portrait  <----------------
 
 */
 
@@ -564,6 +564,16 @@ bottom: 0px;
    min-width: auto;
    display: block;
   }
+
+}
+
+/*
+
+---------------->    MOBILE I - landscape  <----------------
+
+*/
+
+@media only screen and (max-width: 500px) and (orientation: landscape) {
 
 }
 
