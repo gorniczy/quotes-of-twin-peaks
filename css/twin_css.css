@@ -574,6 +574,255 @@ bottom: 0px;
 */
 
 @media only screen and (max-width: 500px) and (orientation: landscape) {
+  body {
+    min-height: 100%;
+    background-image: url("../images/rectangle1.png"),   url("../images/rectangle2.png"), url("../images/paper.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, auto, 150%;
+    background-position: top, bottom;
+  }
+
+  #first_page {
+    position: absolute;
+    height: 19rem;
+    width: 90vw;
+    min-height: auto;
+    max-height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-55%);
+  }
+
+  .wrapper {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  /* logo */
+
+  .logo {
+    width: 10rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo2 {
+    position: absolute;
+    width: 23vw;
+    max-width: 5.5rem;
+    min-width: 5rem;
+    top: 1rem;
+    left: 3vw;
+  }
+
+  /* text */
+
+  .title {
+    font-family: AmericanTypewriter;
+    font-size: 22px;
+    color: #448002;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.50);
+    text-align: center;
+    position: absolute;
+    margin: 0 -50% 0 0;
+    top: 43%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #buttons1 p {
+    font-family: AmericanTypewriter;
+    font-size: 16px;
+    color: #241F19;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.50);
+    margin-bottom: 0;
+    position: absolute;
+  }
+
+  .button_name_1 {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-210%);
+  }
+
+  .button_name_2 {
+    bottom: 5%;
+    right: 50%;
+    transform: translateX(+255%);
+  }
+
+  #quote {
+    font-family: AmericanTypewriter;
+    font-size: 18px;
+    color: #3A3836;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 -20% 0 0;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+  }
+
+  /* buttons */
+
+  #mono_button {
+    position: fixed;
+    max-width: 5.5rem;
+    min-width: 4.5rem;
+    width: 20vw;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  #stereo_button {
+    position: fixed;
+    max-width: 5.5rem;
+    min-width: 4.5rem;
+    width: 20vw;
+    top: 3.5rem;
+    right: 1rem;
+  }
+
+  #mono_button:active {
+    top: 1.1rem;
+    right: 0.9rem;
+  }
+
+  #stereo_button:active {
+    top: 3.6rem;
+    right: 0.9rem;
+  }
+
+  #coffee_1, #coffee_2 {
+    position: absolute;
+    width: 4rem;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-150%);
+  }
+
+  #pie_1, #pie_2 {
+    position: absolute;
+    width: 4rem;
+    bottom: 15%;
+    right: 50%;
+    transform: translateX(+150%);
+  }
+
+  #coffee_1:active, #coffee_2:active {
+    bottom: 14.5%;
+    left: 50.5%;
+  }
+
+  #pie_1:active, #pie_2:active {
+    bottom: 14.5%;
+    right: 49.5%;
+  }
+
+  #buttons2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #coffee_3, #coffee_4 {
+    position: absolute;
+    top: 1rem;
+    right: auto;
+    left: 50%;
+    transform: translateX(-105%);
+    max-width: 4.5rem;
+    min-width: 4rem;
+    width: 18vw;
+  }
+
+  #pie_3, #pie_4 {
+    position: absolute;
+    top: 1rem;
+    right: 50%;
+    transform: translateX(+105%);
+    max-width: 4.5rem;
+    min-width: 4rem;
+    width: 18vw;
+  }
+
+  #coffee_3:active, #coffee_4:active {
+    top: 1.1rem;
+    right: none;
+    left: 51%;
+  }
+
+  #pie_3:active, #pie_4:active {
+    top: 1.1rem;
+    right: 49%;
+  }
+
+  #facebook, #twitter {
+    position: fixed;
+    width: 2rem;
+  }
+
+  #facebook {
+    right: 4rem;
+    bottom: 1rem;
+  }
+
+  #twitter {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  /* mono mode */
+
+  #grid_one {
+    position: absolute;
+    width: 100vw;
+    height: 90vw;
+    top: 43%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  #mono_image {
+    position: absolute;
+    width: 100vw;
+    height: 90vw;
+    top: 50%;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+  }
+
+  #mono_quote {
+    position: absolute;
+    top: initial;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(+50%);
+  }
+
+  #image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 90vw;
+    min-height: auto;
+  }
+
+  #sheet {
+   width: 120vw;
+   min-width: auto;
+   display: block;
+  }
 
 }
 
@@ -589,7 +838,7 @@ bottom: 0px;
     min-height: 100%;
     background-image: url("../images/triangle1.png"),   url("../images/triangle2.png"), url("../images/paper.jpg");
     background-repeat: no-repeat;
-    background-size: 65%, 65%, auto 200%;
+    background-size: 65%, 65%, auto 300%;
     background-position: left top, right bottom;
   }
 
