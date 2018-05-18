@@ -236,18 +236,12 @@ body {
 
 #grid_two {
   display: none;
-  width: 90vw;
-  height: 90vh;
-  position: absolute;
-  top: 5%;
   z-index: -1;
 }
 
 #stereo_1, #stereo_2 {
   width: 45vw;
   height: 65vh;
-  display: inline-grid;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
 #stereo_1 {
