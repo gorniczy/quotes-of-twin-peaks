@@ -243,18 +243,21 @@ body {
 
 #stereo_1, #stereo_2 {
   width: 45vw;
-  height: 65vh;
+  height: 40vw;
+  min-height: 30rem;
 }
 
 #stereo_1 {
-position: absolute;
-bottom: 10vh;
+  position: absolute;
+  bottom: 10vh;
+  left: 5vw;
 }
 
 #stereo_2 {
   position: absolute;
-  top: 10vh;
-  right: 10vw;
+  top: 5vh;
+  right: 15vw;
+  z-index: -1;
 }
 
 #torn_sheet_1, #torn_sheet_2 {
@@ -263,6 +266,11 @@ bottom: 10vh;
 
 #torn_sheet_1 {
   bottom: 5vh;
+}
+
+#torn_sheet_2 {
+  bottom: 5vh;
+  left: 20vw;
 }
 
 
@@ -284,23 +292,18 @@ bottom: 10vh;
   display: block;
 }
 
+
 #image_1, #image_2 {
   display: block;
-  max-height: 65vh;
+  height: 40vw;
+  min-height: 30rem;
   margin: 0 auto;
-}
-
-#character_1 {
-  grid-area: 1/2/span 3/ span 2;
-}
-
-#character_2 {
-  grid-area: 1/1/span 3/ span 2;
 }
 
 #sheet_1, #sheet_2 {
   display: block;
   width: 30vw;
+  min-width: 23rem;
 }
 
 /*
