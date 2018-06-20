@@ -1,6 +1,6 @@
-* {
+/* {
     outline: 1px solid red;
-}
+}*/
 
 /* page */
 
@@ -249,14 +249,14 @@ body {
 
 #stereo_1 {
   position: absolute;
-  bottom: 10vh;
+  bottom: 3vh;
   left: 5vw;
 }
 
 #stereo_2 {
   position: absolute;
   top: 5vh;
-  right: 15vw;
+  right: 10vw;
   z-index: -1;
 }
 
@@ -265,12 +265,15 @@ body {
 }
 
 #torn_sheet_1 {
+  left: 50%;
   bottom: 5vh;
+  transform: translateX(-50%) translateY(+50%);
 }
 
 #torn_sheet_2 {
+  left: 50%;
   bottom: 5vh;
-  left: 20vw;
+  transform: translateX(-50%) translateY(+50%);
 }
 
 
@@ -295,7 +298,7 @@ body {
 
 #image_1, #image_2 {
   display: block;
-  height: 40vw;
+  height: 37vw;
   min-height: 30rem;
   margin: 0 auto;
 }
