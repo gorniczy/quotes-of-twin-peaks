@@ -244,19 +244,19 @@ body {
 #stereo_1, #stereo_2 {
   width: 45vw;
   height: 40vw;
-  min-height: 30rem;
+  min-height: 33rem;
 }
 
 #stereo_1 {
   position: absolute;
-  bottom: 3vh;
+  bottom: 5vh;
   left: 5vw;
 }
 
 #stereo_2 {
   position: absolute;
-  top: 5vh;
-  right: 10vw;
+  top: 3vh;
+  right: 12vw;
   z-index: -1;
 }
 
@@ -305,8 +305,7 @@ body {
 
 #sheet_1, #sheet_2 {
   display: block;
-  width: 30vw;
-  min-width: 23rem;
+  width: 28rem;
 }
 
 /*
