@@ -243,20 +243,20 @@ body {
 
 #stereo_1, #stereo_2 {
   width: 45vw;
-  height: 40vw;
-  min-height: 33rem;
+  height: 35vw;
+  min-height: 28rem;
 }
 
 #stereo_1 {
   position: absolute;
-  bottom: 5vh;
-  left: 5vw;
+  bottom: 6vh;
+  left: 2vw;
 }
 
 #stereo_2 {
   position: absolute;
-  top: 3vh;
-  right: 12vw;
+  top: 4vh;
+  left: 38vw;
   z-index: -1;
 }
 
@@ -298,14 +298,15 @@ body {
 
 #image_1, #image_2 {
   display: block;
-  height: 37vw;
-  min-height: 30rem;
+  height: 32vw;
+  min-height: 25rem;
   margin: 0 auto;
 }
 
 #sheet_1, #sheet_2 {
   display: block;
-  width: 28rem;
+  width: 33vw;
+  min-width: 25rem;
 }
 
 /*
