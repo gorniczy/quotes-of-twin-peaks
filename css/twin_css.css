@@ -1,6 +1,6 @@
-/* {
+* {
     outline: 1px solid red;
-}*/
+}
 
 /* page */
 
@@ -411,6 +411,18 @@ body {
     text-align: center;
   }
 
+  #quote_1, #quote_2 {
+    font-family: AmericanTypewriter;
+    font-size: 16px;
+    color: #3A3836;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 -40% 0 0;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+  }
+
   /* buttons */
 
   #mono_button {
@@ -564,6 +576,62 @@ body {
    width: 120vw;
    min-width: auto;
    display: block;
+  }
+
+  /* stereo mode */
+
+  #stereo_1, #stereo_2 {
+    width: 50vw;
+    height: 35vw;
+    min-height: 20rem;
+  }
+
+  #stereo_1 {
+    position: absolute;
+    top: 50%;
+    left: 0vw;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+
+  #stereo_2 {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    bottom: auto;
+    right: 0vw;
+    transform: translateY(-50%);
+  }
+
+  #torn_sheet_1, #torn_sheet_2 {
+    position: initial;
+  }
+
+  #torn_sheet_1 {
+    position: fixed;
+    left: initial;
+    bottom: initial;
+    transform: initial;
+  }
+
+  #torn_sheet_2 {
+    position: fixed;
+    left: initial;
+    bottom: initial;
+    transform: initial;
+  }
+
+  #image_1, #image_2 {
+    display: block;
+    height: 32vw;
+    min-height: 14rem;
+    margin: none;
+  }
+
+  #sheet_1, #sheet_2 {
+    display: block;
+    width: 120vw;
+    min-width: none;
   }
 
 }
