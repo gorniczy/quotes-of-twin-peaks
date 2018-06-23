@@ -1,6 +1,6 @@
-* {
+/* {
     outline: 1px solid red;
-}
+}*/
 
 /* page */
 
@@ -418,7 +418,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: 0 -40% 0 0;
+    margin: 0 -30% 0 0;
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
   }
@@ -581,15 +581,15 @@ body {
   /* stereo mode */
 
   #stereo_1, #stereo_2 {
-    width: 50vw;
-    height: 35vw;
-    min-height: 20rem;
+    width: 100vw;
+    height: 60vw;
+    min-height: 13rem;
   }
 
   #stereo_1 {
     position: absolute;
     top: 50%;
-    left: 0vw;
+    left: auto;
     bottom: auto;
     transform: translateY(-50%);
   }
@@ -599,38 +599,46 @@ body {
     top: 50%;
     left: auto;
     bottom: auto;
-    right: 0vw;
+    right: auto;
     transform: translateY(-50%);
   }
 
   #torn_sheet_1, #torn_sheet_2 {
-    position: initial;
+    position: fixed;
   }
 
   #torn_sheet_1 {
-    position: fixed;
-    left: initial;
-    bottom: initial;
-    transform: initial;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(+100%);
   }
 
   #torn_sheet_2 {
-    position: fixed;
-    left: initial;
+    left: 50%;
+    top: 0;
     bottom: initial;
-    transform: initial;
+    transform: translateX(-50%) translateY(-100%);
   }
 
   #image_1, #image_2 {
+    position: absolute;
     display: block;
-    height: 32vw;
-    min-height: 14rem;
-    margin: none;
+    height: 60vw;
+    min-height: 13rem;
+    margin: auto;
+  }
+
+  #image_1 {
+    left: 3vw;
+  }
+
+  #image_2 {
+    right: 3vw;
   }
 
   #sheet_1, #sheet_2 {
     display: block;
-    width: 120vw;
+    width: 110vw;
     min-width: none;
   }
 
