@@ -610,14 +610,14 @@ body {
   #torn_sheet_1 {
     left: 50%;
     bottom: 0;
-    transform: translateX(-50%) translateY(+100%);
+    transform: translateX(-50%) translateY(+80%);
   }
 
   #torn_sheet_2 {
     left: 50%;
     top: 0;
     bottom: initial;
-    transform: translateX(-50%) translateY(-100%);
+    transform: translateX(-50%) translateY(-80%);
   }
 
   #image_1, #image_2 {
