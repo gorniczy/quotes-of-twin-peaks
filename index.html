@@ -252,6 +252,15 @@
 <!---------------------------------------------->
 
   <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v3.0';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
   <div class="wrapper">
 
 <!-- Title page -->
@@ -329,8 +338,10 @@
 <!-- Social media -->
 
   <div id="social">
-    <img src="images/facebook button.png" id="facebook" alt="facebook button">
-    <img src="images/twitter button.png" id="twitter" alt="twitter button">
+    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgorniczy.github.io%2Fquotes-of-twin-peaks&amp;src=sdkpreparse"><img src="images/facebook button.png" id="facebook" alt="facebook button"></a>
+
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgorniczy.github.io%2Fquotes-of-twin-peaks&amp;src=sdkpreparse&text=Generate%2C%20mix%20and%20combine%20quotes%20from%20the%20iconic%2090s%20TV%20show%20%E2%80%94%20Twin%20Peaks%20%E2%80%94%20" target="_blank"><img src="images/twitter button.png" id="twitter" alt="twitter button"></a>
+
   </div>
 
   </div>

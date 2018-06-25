@@ -215,6 +215,16 @@ body {
   bottom: 3rem;
 }
 
+#facebook:active {
+  right: 5.45rem;
+  bottom: 2.95rem;
+}
+
+#twitter:active {
+  right: 1.95rem;
+  bottom: 2.95rem;
+}
+
 /* containers/grids/flexboxes */
 
 #grid_one {
