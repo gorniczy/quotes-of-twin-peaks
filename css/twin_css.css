@@ -695,7 +695,7 @@ body {
   #caption {
     display: none;
     position: absolute;
-    bottom: 0.8rem;
+    bottom: 0;
     left: 0.5rem;
     border-top: 1px solid #73706C;
     width: 14rem;
