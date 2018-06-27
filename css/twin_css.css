@@ -571,6 +571,16 @@ body {
     bottom: 1rem;
   }
 
+  #facebook:active {
+    right: 3.95rem;
+    bottom: 0.95rem;
+  }
+
+  #twitter:active {
+    right: 0.95rem;
+    bottom: 0.95rem;
+  }
+
   /* mono mode */
 
   #grid_one {
@@ -859,6 +869,16 @@ body {
   #twitter {
     right: 1rem;
     bottom: 3rem;
+  }
+
+  #facebook:active {
+    right: 4.45rem;
+    bottom: 2.95rem;
+  }
+
+  #twitter:active {
+    right: 0.95rem;
+    bottom: 2.95rem;
   }
 
   /* mono mode */
