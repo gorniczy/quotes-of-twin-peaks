@@ -1220,8 +1220,13 @@ body {
     background-size: 100%;
     background-position: left top, right bottom;
   }
+
   .wrapper {
     display: none;
+  }
+
+  #caption {
+    visibility: hidden;
   }
 
   .landscape {
