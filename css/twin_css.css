@@ -90,6 +90,18 @@ body {
   position: absolute;
 }
 
+#caption p {
+  font-family: AmericanTypewriter;
+  font-size: 14px;
+  color: #73706C;
+  margin: 0;
+  text-align: right;
+}
+
+#caption p a {
+  color: #B1544E;
+}
+
 .button_name_1 {
   bottom: 6%;
   left: 50%;
@@ -319,6 +331,14 @@ body {
   min-width: 25rem;
 }
 
+#caption {
+  display: none;
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  border-top: 1px solid #73706C;
+}
+
 /*
 
 ---------------->    MOBILE I - portrait  <----------------
@@ -431,6 +451,14 @@ body {
     margin: 0 -30% 0 0;
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
+  }
+
+  #caption p {
+    font-family: AmericanTypewriter;
+    font-size: 14px;
+    color: #73706C;
+    margin: 0;
+    text-align: left;
   }
 
   /* buttons */
@@ -652,6 +680,15 @@ body {
     display: block;
     width: 110vw;
     min-width: none;
+  }
+
+  #caption {
+    display: none;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0.5rem;
+    border-top: 1px solid #73706C;
+    width: 14rem;
   }
 
 }
@@ -921,7 +958,17 @@ body {
     min-width: 22rem;
   }
 
+  #caption {
+    display: none;
+    position: absolute;
+    bottom: 0.3rem;
+    right: 1rem;
+    border-top: 1px solid #73706C;
+    width: 14rem;
+  }
+
 }
+
 
 /*
 
