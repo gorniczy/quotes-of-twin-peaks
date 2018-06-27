@@ -1,6 +1,6 @@
-* {
+/* {
     outline: 1px solid red;
-}
+}*/
 
 /* page */
 
@@ -457,7 +457,7 @@ body {
     font-family: AmericanTypewriter;
     font-size: 14px;
     color: #73706C;
-    margin: initial;
+    margin: 0;
     text-align: left;
   }
 
@@ -695,7 +695,7 @@ body {
   #caption {
     display: none;
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.8rem;
     left: 0.5rem;
     border-top: 1px solid #73706C;
     width: 14rem;
