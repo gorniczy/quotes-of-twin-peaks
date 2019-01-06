@@ -1,1 +1,1 @@
-# quotes of twin peaks
+The driving force of the project is unpredictability. Users can generate random quotes from their beloved TV series. Excerpts are shown, mixed and combined in the most unexpected, engaging ways. If the used database is extensive, chances of getting the same quote repeatedly are low, so the user experience becomes even more unique. The mechanism may be used as a template for any text corpus and holds potential for commercial and academic implementations. 
