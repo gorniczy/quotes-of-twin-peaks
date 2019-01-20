@@ -27,7 +27,7 @@ body {
   display: none;
 }
 
-#first_page {
+#intro_page {
   position: absolute;
   height: 50vh;
   width: 70vw;
@@ -38,7 +38,7 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 
-#second_page {
+#action_page {
   display: none;
 }
 
@@ -354,7 +354,7 @@ body {
     background-position: top, bottom;
   }
 
-  #first_page {
+  #intro_page {
     position: absolute;
     height: 19rem;
     width: 90vw;
@@ -718,7 +718,7 @@ body {
     background-position: left top, right bottom;
   }
 
-  #first_page {
+  #intro_page {
     position: absolute;
     height: 25rem;
     width: 90vw;
@@ -1001,7 +1001,7 @@ body {
     background-size: 65%, 65%, 100%;
   }
 
-  #first_page {
+  #intro_page {
     position: absolute;
     height: 25rem;
     width: 70vw;
