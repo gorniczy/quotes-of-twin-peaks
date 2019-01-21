@@ -243,7 +243,7 @@ const content = {
   }
 }
 
-// set DOM elements to constants
+// DOM elements set to constants
 
 const introPage = document.getElementById("intro_page");
 const actionPage = document.getElementById("action_page");
@@ -268,7 +268,7 @@ const stereoQuoteTwo = document.getElementById("quote_2");
 const socialIcons = document.getElementById("social");
 const caption = document.getElementById("caption");
 
-// Functions to choose between 'monologue' and 'dialogue' quoting
+// Choose between 'monologue' and 'dialogue' quoting
 
 function switchMonoStereo(mode) {
   const isMono = mode === "mono";
@@ -307,7 +307,7 @@ function changePage(mode) {
   gridTwoVisible = isMono ? false : true;
 }
 
-// show grid_one or grid_two
+// Display grid_one or grid_two
 
 function showGridOne() {
   if (!gridOneVisible) {
@@ -329,13 +329,13 @@ function showGridTwo() {
   return null;
 }
 
-// random number function
+// Return a random number
 
 function randomNum(num) {
   return Math.floor(Math.random() * num);
 }
 
-// Basic 'monologue' quote fucntion
+// Generate basic 'monologue' quote
 
 function randomize() {
   const characterNum = randomNum(10);
@@ -349,7 +349,7 @@ function randomize() {
   monoQuote.innerHTML = quotation;
 }
 
-// Mixed 'monologue' quote fucntion (random character to random quote)
+// Generate mixed 'monologue' quote (random character to random quote)
 
 function mix() {
   const characterNum = randomNum(10);
@@ -366,7 +366,7 @@ function mix() {
 
 }
 
-// Basic "dialogue" quote function
+// Generate basic 'dialogue' quote
 
 function combine() {
   const characterNum = randomNum(10);
@@ -393,7 +393,7 @@ function combine() {
   }
 }
 
-// Mixed 'dialogue' quote fucntion (2 random characters to 2 random quotes)
+// Generate mixed 'dialogue' quote (2 random characters to 2 random quotes)
 
 function combineMix() {
   const characterNum = randomNum(10);
@@ -425,7 +425,7 @@ function combineMix() {
   }
 }
 
-// add functions to click events
+// Functions added to click events
 
 coffeeIcon1.addEventListener("click", function() {
   randomize();
