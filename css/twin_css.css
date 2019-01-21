@@ -194,6 +194,10 @@ body {
   width: 4.5rem;
 }
 
+#coffee_4, #pie_4 {
+  display: none;
+}
+
 #coffee_3:active, #coffee_4:active {
   top: 2.1rem;
   right: 13.9rem;
