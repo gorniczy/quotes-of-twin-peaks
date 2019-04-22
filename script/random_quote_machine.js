@@ -17,9 +17,7 @@ const characters = {
 
 const content = {
   Laura: {
-    images: ["images/laura.png",
-      "images/laura_2.png"
-    ],
+    image: "images/laura.png",
     quotes: ["I hate asparagus.",
       "Does this mean I'll never grow up?",
       "Nervous about meeting 'J' tonight.",
@@ -42,9 +40,7 @@ const content = {
     ]
   },
   Audrey: {
-    images: ["images/audrey.png",
-      "images/audrey_2.png"
-    ],
+    image: "images/audrey.png",
     quotes: ["Please don't make me leave.",
       "Love stinks!",
       "Do you like coffee?",
@@ -66,9 +62,7 @@ const content = {
     ]
   },
   Cooper: {
-    images: ["images/cooper.png",
-      "images/cooper_2.png"
-    ],
+    image: "images/cooper.png",
     quotes: ["I've never seen so many trees in my life.",
       "You've been through a lot today.",
       "That's a lot of girl scout cookies.",
@@ -115,9 +109,7 @@ const content = {
     ]
   },
   Bob: {
-    images: ["images/bob.png",
-      "images/bob_2.png"
-    ],
+    image: "images/bob.png",
     quotes: ["I will kill again!",
       "Catch you with my death bag.",
       "You may think I've gone insane.",
@@ -131,9 +123,7 @@ const content = {
     ]
   },
   Leland: {
-    images: ["images/leland.png",
-      "images/leland_2.png"
-    ],
+    image: "images/leland.png",
     quotes: ["We have to dance for Laura.",
       "Will you dance with me? Please.",
       " Oh mairzy doats and dozy doats and liddle lamzy divey.",
@@ -155,9 +145,7 @@ const content = {
     ]
   },
   Andy: {
-    images: ["images/andy.png",
-      "images/andy_2.png"
-    ],
+    image: "images/andy.png",
     quotes: ["It's not a puzzle at all!",
       "It didn't hurt ... it didn't hurt a bit.",
       "My gun just slipped out of my hand.",
@@ -174,9 +162,7 @@ const content = {
     ]
   },
   Lucy: {
-    images: ["images/lucy.png",
-      "images/lucy_2.png"
-    ],
+    image: "images/lucy.png",
     quotes: ["I'm pregnant.",
       "Oh, I'm ... getting excited.",
       "Sweetie?",
@@ -194,9 +180,7 @@ const content = {
     ]
   },
   Margaret: {
-    images: ["images/margaret.png",
-      "images/margaret_2.png"
-    ],
+    image: "images/margaret.png",
     quotes: ["My log does not judge.",
       "Ask it.",
       "One day my log will have something to say about this.",
@@ -212,9 +196,7 @@ const content = {
     ]
   },
   Leo: {
-    images: ["images/leo.png",
-      "images/leo_2.png"
-    ],
+    image: "images/leo.png",
     quotes: ["What kind of cigarettes do you smoke?",
       "Where's my shirt?",
       "Did you finish cleaning my boots?",
@@ -232,9 +214,7 @@ const content = {
     ]
   },
   Waldo: {
-    images: ["images/waldo.png",
-      "images/waldo_2.png"
-    ],
+    image: "images/waldo.png",
     quotes: ["Laura, Laura",
       "Stop it!",
       "Don't go there",
@@ -343,7 +323,7 @@ function randomize() {
   const quoteListLength = content[character].quotes.length;
   const quoteNum = randomNum(quoteListLength);
   const quotation = content[character].quotes[quoteNum];
-  const image = content[character].images[0];
+  const image = content[character].image;
   monoImage.src = image;
   monoImage.alt = "image of " + character;
   monoQuote.innerHTML = quotation;
@@ -359,7 +339,7 @@ function mix() {
   const quoteListLength = content[quotedCharacter].quotes.length;
   const quoteNum = randomNum(quoteListLength);
   const quotation = content[quotedCharacter].quotes[quoteNum];
-  const image = content[character].images[0];
+  const image = content[character].image;
   monoImage.src = image;
   monoImage.alt = "image of " + character;
   monoQuote.innerHTML = quotation;
@@ -379,8 +359,8 @@ function combine() {
   const quoteTwoNum = randomNum(quoteTwoListLength);
   const quotationOne = content[characterOne].quotes[quoteOneNum];
   const quotationTwo = content[characterTwo].quotes[quoteTwoNum];
-  const imageOne = content[characterOne].images[0];
-  const imageTwo = content[characterTwo].images[1];
+  const imageOne = content[characterOne].image;
+  const imageTwo = content[characterTwo].image;
   if (characterOne != characterTwo) {
     stereoImageOne.src = imageOne;
     stereoImageOne.alt = "image of " + characterOne;
@@ -410,8 +390,8 @@ function combineMix() {
   const quoteTwoNum = randomNum(quoteTwoListLength);
   const quotationOne = content[quotedCharacterOne].quotes[quoteOneNum];
   const quotationTwo = content[quotedCharacterTwo].quotes[quoteTwoNum];
-  const imageOne = content[characterOne].images[0];
-  const imageTwo = content[characterTwo].images[1];
+  const imageOne = content[characterOne].image;
+  const imageTwo = content[characterTwo].image;
 
   if (characterOne != characterTwo && quotedCharacterOne != quotedCharacterTwo) {
     stereoImageOne.src = imageOne;
