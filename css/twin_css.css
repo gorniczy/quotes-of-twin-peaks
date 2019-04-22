@@ -321,6 +321,10 @@ body {
   display: block;
 }
 
+#image_2 {
+  transform: rotateY(180deg);
+}
+
 
 #image_1, #image_2 {
   display: block;
