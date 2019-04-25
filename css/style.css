@@ -312,7 +312,7 @@ body {
   transform: translateX(-50%) translateY(-50%);
   height: 50vw;
   min-height: 38rem;
-  max-height: 52rem;
+  max-height: 80vh;
 }
 
 #sheet {
